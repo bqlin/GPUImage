@@ -1,1 +1,1 @@
-../../../GPUImage/framework/Source/GPUImageSwirlFilter.h
+../../../../../../GPUImage-doc/framework/Source/GPUImageSwirlFilter.h

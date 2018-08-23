@@ -1,1 +1,1 @@
-../../../GPUImage/framework/Source/GPUImageToneCurveFilter.h
+../../../../../../GPUImage-doc/framework/Source/GPUImageToneCurveFilter.h

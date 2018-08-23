@@ -1,1 +1,1 @@
-../../../GPUImage/framework/Source/GPUImageStillCamera.h
+../../../../../../GPUImage-doc/framework/Source/GPUImageStillCamera.h

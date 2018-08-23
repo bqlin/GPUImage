@@ -1,1 +1,1 @@
-../../../GPUImage/framework/Source/GPUImageHistogramEqualizationFilter.h
+../../../../../../GPUImage-doc/framework/Source/GPUImageHistogramEqualizationFilter.h

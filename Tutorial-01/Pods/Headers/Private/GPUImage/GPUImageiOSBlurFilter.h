@@ -1,1 +1,1 @@
-../../../GPUImage/framework/Source/GPUImageiOSBlurFilter.h
+../../../../../../GPUImage-doc/framework/Source/GPUImageiOSBlurFilter.h

@@ -1,1 +1,1 @@
-../../../GPUImage/framework/Source/GPUImageExposureFilter.h
+../../../../../../GPUImage-doc/framework/Source/GPUImageExposureFilter.h

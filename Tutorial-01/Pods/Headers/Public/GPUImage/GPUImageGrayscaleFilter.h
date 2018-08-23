@@ -1,1 +1,1 @@
-../../../GPUImage/framework/Source/GPUImageGrayscaleFilter.h
+../../../../../../GPUImage-doc/framework/Source/GPUImageGrayscaleFilter.h

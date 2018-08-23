@@ -1,1 +1,1 @@
-../../../GPUImage/framework/Source/GPUImageMotionDetector.h
+../../../../../../GPUImage-doc/framework/Source/GPUImageMotionDetector.h

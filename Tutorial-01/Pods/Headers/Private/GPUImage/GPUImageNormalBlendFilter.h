@@ -1,1 +1,1 @@
-../../../GPUImage/framework/Source/GPUImageNormalBlendFilter.h
+../../../../../../GPUImage-doc/framework/Source/GPUImageNormalBlendFilter.h

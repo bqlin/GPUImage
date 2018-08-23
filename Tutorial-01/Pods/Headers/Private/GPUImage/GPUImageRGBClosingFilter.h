@@ -1,1 +1,1 @@
-../../../GPUImage/framework/Source/GPUImageRGBClosingFilter.h
+../../../../../../GPUImage-doc/framework/Source/GPUImageRGBClosingFilter.h

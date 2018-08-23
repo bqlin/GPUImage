@@ -1,1 +1,1 @@
-../../../GPUImage/framework/Source/GPUImageMedianFilter.h
+../../../../../../GPUImage-doc/framework/Source/GPUImageMedianFilter.h

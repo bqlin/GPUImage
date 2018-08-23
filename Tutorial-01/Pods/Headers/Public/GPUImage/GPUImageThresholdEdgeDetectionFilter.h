@@ -1,1 +1,1 @@
-../../../GPUImage/framework/Source/GPUImageThresholdEdgeDetectionFilter.h
+../../../../../../GPUImage-doc/framework/Source/GPUImageThresholdEdgeDetectionFilter.h

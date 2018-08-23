@@ -1,1 +1,1 @@
-../../../GPUImage/framework/Source/GPUImageWhiteBalanceFilter.h
+../../../../../../GPUImage-doc/framework/Source/GPUImageWhiteBalanceFilter.h

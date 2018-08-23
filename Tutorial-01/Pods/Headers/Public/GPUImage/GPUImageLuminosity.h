@@ -1,1 +1,1 @@
-../../../GPUImage/framework/Source/GPUImageLuminosity.h
+../../../../../../GPUImage-doc/framework/Source/GPUImageLuminosity.h

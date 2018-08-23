@@ -1,1 +1,1 @@
-../../../GPUImage/framework/Source/GPUImageXYDerivativeFilter.h
+../../../../../../GPUImage-doc/framework/Source/GPUImageXYDerivativeFilter.h

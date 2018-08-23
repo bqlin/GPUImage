@@ -1,1 +1,1 @@
-../../../GPUImage/framework/Source/GPUImageTwoInputCrossTextureSamplingFilter.h
+../../../../../../GPUImage-doc/framework/Source/GPUImageTwoInputCrossTextureSamplingFilter.h

@@ -1,1 +1,1 @@
-../../../GPUImage/framework/Source/GPUImageFilterPipeline.h
+../../../../../../GPUImage-doc/framework/Source/GPUImageFilterPipeline.h

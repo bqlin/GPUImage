@@ -1,1 +1,1 @@
-../../../GPUImage/framework/Source/GPUImageAverageColor.h
+../../../../../../GPUImage-doc/framework/Source/GPUImageAverageColor.h

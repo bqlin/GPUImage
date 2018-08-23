@@ -1,1 +1,1 @@
-../../../GPUImage/framework/Source/GPUImageHalftoneFilter.h
+../../../../../../GPUImage-doc/framework/Source/GPUImageHalftoneFilter.h

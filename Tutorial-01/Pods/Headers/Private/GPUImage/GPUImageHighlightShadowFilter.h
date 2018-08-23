@@ -1,1 +1,1 @@
-../../../GPUImage/framework/Source/GPUImageHighlightShadowFilter.h
+../../../../../../GPUImage-doc/framework/Source/GPUImageHighlightShadowFilter.h

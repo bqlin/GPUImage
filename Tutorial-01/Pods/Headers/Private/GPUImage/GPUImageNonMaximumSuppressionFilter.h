@@ -1,1 +1,1 @@
-../../../GPUImage/framework/Source/GPUImageNonMaximumSuppressionFilter.h
+../../../../../../GPUImage-doc/framework/Source/GPUImageNonMaximumSuppressionFilter.h

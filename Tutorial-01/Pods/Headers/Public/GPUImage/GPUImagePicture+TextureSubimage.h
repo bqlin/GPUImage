@@ -1,1 +1,1 @@
-../../../GPUImage/framework/Source/iOS/GPUImagePicture+TextureSubimage.h
+../../../../../../GPUImage-doc/framework/Source/iOS/GPUImagePicture+TextureSubimage.h

@@ -1,1 +1,1 @@
-../../../GPUImage/framework/Source/GPUImageLinearBurnBlendFilter.h
+../../../../../../GPUImage-doc/framework/Source/GPUImageLinearBurnBlendFilter.h

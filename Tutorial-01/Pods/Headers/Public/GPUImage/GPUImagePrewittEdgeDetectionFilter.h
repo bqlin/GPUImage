@@ -1,1 +1,1 @@
-../../../GPUImage/framework/Source/GPUImagePrewittEdgeDetectionFilter.h
+../../../../../../GPUImage-doc/framework/Source/GPUImagePrewittEdgeDetectionFilter.h

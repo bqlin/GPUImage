@@ -1,1 +1,1 @@
-../../../GPUImage/framework/Source/GPUImageThreeInputFilter.h
+../../../../../../GPUImage-doc/framework/Source/GPUImageThreeInputFilter.h

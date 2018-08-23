@@ -1,1 +1,1 @@
-../../../GPUImage/framework/Source/GPUImage3x3ConvolutionFilter.h
+../../../../../../GPUImage-doc/framework/Source/GPUImage3x3ConvolutionFilter.h

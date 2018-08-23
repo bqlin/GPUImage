@@ -1,1 +1,1 @@
-../../../GPUImage/framework/Source/GPUImagePolkaDotFilter.h
+../../../../../../GPUImage-doc/framework/Source/GPUImagePolkaDotFilter.h

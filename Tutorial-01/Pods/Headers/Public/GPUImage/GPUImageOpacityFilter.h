@@ -1,1 +1,1 @@
-../../../GPUImage/framework/Source/GPUImageOpacityFilter.h
+../../../../../../GPUImage-doc/framework/Source/GPUImageOpacityFilter.h

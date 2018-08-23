@@ -1,1 +1,1 @@
-../../../GPUImage/framework/Source/GPUImageZoomBlurFilter.h
+../../../../../../GPUImage-doc/framework/Source/GPUImageZoomBlurFilter.h

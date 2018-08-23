@@ -1,1 +1,1 @@
-../../../GPUImage/framework/Source/GPUImageHardLightBlendFilter.h
+../../../../../../GPUImage-doc/framework/Source/GPUImageHardLightBlendFilter.h

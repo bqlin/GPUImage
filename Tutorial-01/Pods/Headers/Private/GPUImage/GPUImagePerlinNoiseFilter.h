@@ -1,1 +1,1 @@
-../../../GPUImage/framework/Source/GPUImagePerlinNoiseFilter.h
+../../../../../../GPUImage-doc/framework/Source/GPUImagePerlinNoiseFilter.h

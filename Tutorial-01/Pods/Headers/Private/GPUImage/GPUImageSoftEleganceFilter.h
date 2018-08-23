@@ -1,1 +1,1 @@
-../../../GPUImage/framework/Source/GPUImageSoftEleganceFilter.h
+../../../../../../GPUImage-doc/framework/Source/GPUImageSoftEleganceFilter.h

@@ -1,1 +1,1 @@
-../../../GPUImage/framework/Source/GPUImageHistogramFilter.h
+../../../../../../GPUImage-doc/framework/Source/GPUImageHistogramFilter.h

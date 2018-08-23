@@ -1,1 +1,1 @@
-../../../GPUImage/framework/Source/GPUImageKuwaharaFilter.h
+../../../../../../GPUImage-doc/framework/Source/GPUImageKuwaharaFilter.h

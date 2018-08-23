@@ -1,1 +1,1 @@
-../../../GPUImage/framework/Source/GPUImageContrastFilter.h
+../../../../../../GPUImage-doc/framework/Source/GPUImageContrastFilter.h

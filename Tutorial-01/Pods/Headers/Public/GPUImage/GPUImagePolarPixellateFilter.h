@@ -1,1 +1,1 @@
-../../../GPUImage/framework/Source/GPUImagePolarPixellateFilter.h
+../../../../../../GPUImage-doc/framework/Source/GPUImagePolarPixellateFilter.h

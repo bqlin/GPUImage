@@ -1,1 +1,1 @@
-../../../GPUImage/framework/Source/GPUImageAverageLuminanceThresholdFilter.h
+../../../../../../GPUImage-doc/framework/Source/GPUImageAverageLuminanceThresholdFilter.h

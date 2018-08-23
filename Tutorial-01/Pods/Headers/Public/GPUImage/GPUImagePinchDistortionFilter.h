@@ -1,1 +1,1 @@
-../../../GPUImage/framework/Source/GPUImagePinchDistortionFilter.h
+../../../../../../GPUImage-doc/framework/Source/GPUImagePinchDistortionFilter.h

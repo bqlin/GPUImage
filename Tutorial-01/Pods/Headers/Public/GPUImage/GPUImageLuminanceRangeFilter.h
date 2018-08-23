@@ -1,1 +1,1 @@
-../../../GPUImage/framework/Source/GPUImageLuminanceRangeFilter.h
+../../../../../../GPUImage-doc/framework/Source/GPUImageLuminanceRangeFilter.h

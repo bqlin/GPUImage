@@ -1,1 +1,1 @@
-../../../GPUImage/framework/Source/GPUImageSolidColorGenerator.h
+../../../../../../GPUImage-doc/framework/Source/GPUImageSolidColorGenerator.h

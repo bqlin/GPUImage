@@ -1,1 +1,1 @@
-../../../GPUImage/framework/Source/GPUImageColorMatrixFilter.h
+../../../../../../GPUImage-doc/framework/Source/GPUImageColorMatrixFilter.h

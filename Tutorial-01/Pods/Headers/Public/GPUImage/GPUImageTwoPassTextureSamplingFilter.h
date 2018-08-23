@@ -1,1 +1,1 @@
-../../../GPUImage/framework/Source/GPUImageTwoPassTextureSamplingFilter.h
+../../../../../../GPUImage-doc/framework/Source/GPUImageTwoPassTextureSamplingFilter.h

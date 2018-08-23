@@ -1,1 +1,1 @@
-../../../GPUImage/framework/Source/GPUImageMaskFilter.h
+../../../../../../GPUImage-doc/framework/Source/GPUImageMaskFilter.h

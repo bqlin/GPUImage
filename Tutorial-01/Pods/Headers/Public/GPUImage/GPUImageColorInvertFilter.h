@@ -1,1 +1,1 @@
-../../../GPUImage/framework/Source/GPUImageColorInvertFilter.h
+../../../../../../GPUImage-doc/framework/Source/GPUImageColorInvertFilter.h

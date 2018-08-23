@@ -1,1 +1,1 @@
-../../../GPUImage/framework/Source/GPUImageLaplacianFilter.h
+../../../../../../GPUImage-doc/framework/Source/GPUImageLaplacianFilter.h

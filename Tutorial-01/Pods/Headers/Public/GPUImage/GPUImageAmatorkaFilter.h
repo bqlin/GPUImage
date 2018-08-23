@@ -1,1 +1,1 @@
-../../../GPUImage/framework/Source/GPUImageAmatorkaFilter.h
+../../../../../../GPUImage-doc/framework/Source/GPUImageAmatorkaFilter.h

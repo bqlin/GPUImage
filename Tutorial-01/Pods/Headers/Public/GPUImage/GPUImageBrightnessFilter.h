@@ -1,1 +1,1 @@
-../../../GPUImage/framework/Source/GPUImageBrightnessFilter.h
+../../../../../../GPUImage-doc/framework/Source/GPUImageBrightnessFilter.h

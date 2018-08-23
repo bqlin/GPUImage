@@ -1,1 +1,1 @@
-../../../GPUImage/framework/Source/GPUImageLineGenerator.h
+../../../../../../GPUImage-doc/framework/Source/GPUImageLineGenerator.h

@@ -1,1 +1,1 @@
-../../../GPUImage/framework/Source/GPUImageThresholdSketchFilter.h
+../../../../../../GPUImage-doc/framework/Source/GPUImageThresholdSketchFilter.h

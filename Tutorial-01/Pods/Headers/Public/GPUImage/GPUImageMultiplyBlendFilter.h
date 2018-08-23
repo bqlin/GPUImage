@@ -1,1 +1,1 @@
-../../../GPUImage/framework/Source/GPUImageMultiplyBlendFilter.h
+../../../../../../GPUImage-doc/framework/Source/GPUImageMultiplyBlendFilter.h

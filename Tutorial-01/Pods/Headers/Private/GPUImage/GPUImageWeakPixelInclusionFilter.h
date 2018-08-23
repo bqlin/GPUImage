@@ -1,1 +1,1 @@
-../../../GPUImage/framework/Source/GPUImageWeakPixelInclusionFilter.h
+../../../../../../GPUImage-doc/framework/Source/GPUImageWeakPixelInclusionFilter.h

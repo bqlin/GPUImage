@@ -1,1 +1,1 @@
-../../../GPUImage/framework/Source/GPUImageBilateralFilter.h
+../../../../../../GPUImage-doc/framework/Source/GPUImageBilateralFilter.h

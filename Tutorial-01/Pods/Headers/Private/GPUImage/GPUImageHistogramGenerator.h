@@ -1,1 +1,1 @@
-../../../GPUImage/framework/Source/GPUImageHistogramGenerator.h
+../../../../../../GPUImage-doc/framework/Source/GPUImageHistogramGenerator.h

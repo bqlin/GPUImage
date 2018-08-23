@@ -1,1 +1,1 @@
-../../../GPUImage/framework/Source/GPUImageCrosshairGenerator.h
+../../../../../../GPUImage-doc/framework/Source/GPUImageCrosshairGenerator.h

@@ -1,1 +1,1 @@
-../../../GPUImage/framework/Source/GPUImageMonochromeFilter.h
+../../../../../../GPUImage-doc/framework/Source/GPUImageMonochromeFilter.h

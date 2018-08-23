@@ -1,1 +1,1 @@
-../../../GPUImage/framework/Source/GPUImageLuminosityBlendFilter.h
+../../../../../../GPUImage-doc/framework/Source/GPUImageLuminosityBlendFilter.h

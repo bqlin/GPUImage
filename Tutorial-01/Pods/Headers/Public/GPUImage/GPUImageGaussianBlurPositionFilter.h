@@ -1,1 +1,1 @@
-../../../GPUImage/framework/Source/GPUImageGaussianBlurPositionFilter.h
+../../../../../../GPUImage-doc/framework/Source/GPUImageGaussianBlurPositionFilter.h

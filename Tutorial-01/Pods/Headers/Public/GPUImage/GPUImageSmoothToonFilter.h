@@ -1,1 +1,1 @@
-../../../GPUImage/framework/Source/GPUImageSmoothToonFilter.h
+../../../../../../GPUImage-doc/framework/Source/GPUImageSmoothToonFilter.h

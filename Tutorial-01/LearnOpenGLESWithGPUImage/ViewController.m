@@ -12,7 +12,9 @@
 #import <GPUImage/GPUImage.h>
 
 @interface ViewController ()
-@property (nonatomic , strong) UIImageView* mImageView;
+
+@property (nonatomic , strong) UIImageView *mImageView;
+
 @end
 
 @implementation ViewController

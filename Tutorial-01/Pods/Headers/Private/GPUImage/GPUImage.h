@@ -1,1 +1,1 @@
-../../../GPUImage/framework/Source/GPUImage.h
+../../../../../../GPUImage-doc/framework/Source/GPUImage.h

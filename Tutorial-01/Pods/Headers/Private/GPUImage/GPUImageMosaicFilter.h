@@ -1,1 +1,1 @@
-../../../GPUImage/framework/Source/GPUImageMosaicFilter.h
+../../../../../../GPUImage-doc/framework/Source/GPUImageMosaicFilter.h

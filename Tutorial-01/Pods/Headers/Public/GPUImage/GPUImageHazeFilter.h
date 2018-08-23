@@ -1,1 +1,1 @@
-../../../GPUImage/framework/Source/GPUImageHazeFilter.h
+../../../../../../GPUImage-doc/framework/Source/GPUImageHazeFilter.h

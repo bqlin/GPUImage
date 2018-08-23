@@ -1,1 +1,1 @@
-../../../GPUImage/framework/Source/GPUImagePosterizeFilter.h
+../../../../../../GPUImage-doc/framework/Source/GPUImagePosterizeFilter.h

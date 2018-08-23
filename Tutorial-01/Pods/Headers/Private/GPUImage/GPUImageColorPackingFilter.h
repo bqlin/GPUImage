@@ -1,1 +1,1 @@
-../../../GPUImage/framework/Source/GPUImageColorPackingFilter.h
+../../../../../../GPUImage-doc/framework/Source/GPUImageColorPackingFilter.h

@@ -1,1 +1,1 @@
-../../../GPUImage/framework/Source/GPUImageLocalBinaryPatternFilter.h
+../../../../../../GPUImage-doc/framework/Source/GPUImageLocalBinaryPatternFilter.h

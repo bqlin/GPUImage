@@ -1,1 +1,1 @@
-../../../GPUImage/framework/Source/GPUImageShiTomasiFeatureDetectionFilter.h
+../../../../../../GPUImage-doc/framework/Source/GPUImageShiTomasiFeatureDetectionFilter.h

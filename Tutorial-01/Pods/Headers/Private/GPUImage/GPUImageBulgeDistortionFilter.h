@@ -1,1 +1,1 @@
-../../../GPUImage/framework/Source/GPUImageBulgeDistortionFilter.h
+../../../../../../GPUImage-doc/framework/Source/GPUImageBulgeDistortionFilter.h

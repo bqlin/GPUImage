@@ -1,1 +1,1 @@
-../../../GPUImage/framework/Source/GPUImageLanczosResamplingFilter.h
+../../../../../../GPUImage-doc/framework/Source/GPUImageLanczosResamplingFilter.h

@@ -1,1 +1,1 @@
-../../../GPUImage/framework/Source/GPUImageHSBFilter.h
+../../../../../../GPUImage-doc/framework/Source/GPUImageHSBFilter.h

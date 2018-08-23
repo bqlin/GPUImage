@@ -1,1 +1,1 @@
-../../../GPUImage/framework/Source/GPUImageFASTCornerDetectionFilter.h
+../../../../../../GPUImage-doc/framework/Source/GPUImageFASTCornerDetectionFilter.h

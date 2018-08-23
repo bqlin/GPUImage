@@ -1,1 +1,1 @@
-../../../GPUImage/framework/Source/GPUImageGammaFilter.h
+../../../../../../GPUImage-doc/framework/Source/GPUImageGammaFilter.h

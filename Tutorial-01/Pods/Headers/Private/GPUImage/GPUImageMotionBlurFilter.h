@@ -1,1 +1,1 @@
-../../../GPUImage/framework/Source/GPUImageMotionBlurFilter.h
+../../../../../../GPUImage-doc/framework/Source/GPUImageMotionBlurFilter.h

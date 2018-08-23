@@ -1,1 +1,1 @@
-../../../GPUImage/framework/Source/GPUImagePixellatePositionFilter.h
+../../../../../../GPUImage-doc/framework/Source/GPUImagePixellatePositionFilter.h

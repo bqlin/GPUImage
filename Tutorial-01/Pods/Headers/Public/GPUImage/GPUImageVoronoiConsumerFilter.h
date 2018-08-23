@@ -1,1 +1,1 @@
-../../../GPUImage/framework/Source/GPUImageVoronoiConsumerFilter.h
+../../../../../../GPUImage-doc/framework/Source/GPUImageVoronoiConsumerFilter.h

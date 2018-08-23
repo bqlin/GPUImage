@@ -1,1 +1,1 @@
-../../../GPUImage/framework/Source/GPUImageHoughTransformLineDetector.h
+../../../../../../GPUImage-doc/framework/Source/GPUImageHoughTransformLineDetector.h

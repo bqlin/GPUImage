@@ -1,1 +1,1 @@
-../../../GPUImage/framework/Source/GPUImageTiltShiftFilter.h
+../../../../../../GPUImage-doc/framework/Source/GPUImageTiltShiftFilter.h

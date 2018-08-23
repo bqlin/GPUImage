@@ -1,1 +1,1 @@
-../../../GPUImage/framework/Source/GPUImageCropFilter.h
+../../../../../../GPUImage-doc/framework/Source/GPUImageCropFilter.h

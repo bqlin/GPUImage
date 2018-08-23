@@ -1,1 +1,1 @@
-../../../GPUImage/framework/Source/GPUImageLowPassFilter.h
+../../../../../../GPUImage-doc/framework/Source/GPUImageLowPassFilter.h

@@ -1,1 +1,1 @@
-../../../GPUImage/framework/Source/GPUImageParallelCoordinateLineTransformFilter.h
+../../../../../../GPUImage-doc/framework/Source/GPUImageParallelCoordinateLineTransformFilter.h

@@ -1,1 +1,1 @@
-../../../GPUImage/framework/Source/GPUImageDifferenceBlendFilter.h
+../../../../../../GPUImage-doc/framework/Source/GPUImageDifferenceBlendFilter.h

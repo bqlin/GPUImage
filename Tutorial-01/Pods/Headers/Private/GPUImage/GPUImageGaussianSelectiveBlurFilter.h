@@ -1,1 +1,1 @@
-../../../GPUImage/framework/Source/GPUImageGaussianSelectiveBlurFilter.h
+../../../../../../GPUImage-doc/framework/Source/GPUImageGaussianSelectiveBlurFilter.h

@@ -1,1 +1,1 @@
-../../../GPUImage/framework/Source/GPUImage3x3TextureSamplingFilter.h
+../../../../../../GPUImage-doc/framework/Source/GPUImage3x3TextureSamplingFilter.h

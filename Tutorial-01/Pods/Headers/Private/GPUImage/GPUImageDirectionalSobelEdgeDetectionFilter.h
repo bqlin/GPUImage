@@ -1,1 +1,1 @@
-../../../GPUImage/framework/Source/GPUImageDirectionalSobelEdgeDetectionFilter.h
+../../../../../../GPUImage-doc/framework/Source/GPUImageDirectionalSobelEdgeDetectionFilter.h

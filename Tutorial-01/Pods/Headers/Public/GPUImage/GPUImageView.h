@@ -1,1 +1,1 @@
-../../../GPUImage/framework/Source/iOS/GPUImageView.h
+../../../../../../GPUImage-doc/framework/Source/iOS/GPUImageView.h

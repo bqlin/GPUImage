@@ -1,1 +1,1 @@
-../../../GPUImage/framework/Source/GPUImageMissEtikateFilter.h
+../../../../../../GPUImage-doc/framework/Source/GPUImageMissEtikateFilter.h

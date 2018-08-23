@@ -1,1 +1,1 @@
-../../../GPUImage/framework/Source/GPUImageCGAColorspaceFilter.h
+../../../../../../GPUImage-doc/framework/Source/GPUImageCGAColorspaceFilter.h
