@@ -7,7 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A81D786061F7FD4742A0EE20 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D5E67A2FA02D978FA4A0D00F /* libPods.a */; };
+		6B90830C1264B892ED18AC54 /* libPods-LearnOpenGLESWithGPUImageTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ADB1AC0CEFE3B08D84F0B1F3 /* libPods-LearnOpenGLESWithGPUImageTests.a */; };
+		CD29047A52EFC4F49ED1A47E /* libPods-LearnOpenGLESWithGPUImage.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B02D4D79FDF691E335A297E0 /* libPods-LearnOpenGLESWithGPUImage.a */; };
 		FDAAD2531CE1CD7A00C7B6AC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FDAAD2521CE1CD7A00C7B6AC /* main.m */; };
 		FDAAD2561CE1CD7A00C7B6AC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FDAAD2551CE1CD7A00C7B6AC /* AppDelegate.m */; };
 		FDAAD2591CE1CD7A00C7B6AC /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FDAAD2581CE1CD7A00C7B6AC /* ViewController.m */; };
@@ -30,9 +31,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0DF47ABB77D8F1CED25E3249 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
-		D5E67A2FA02D978FA4A0D00F /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		F545DC3F8A69164BBEB6B777 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		8432663D47507357D39116D3 /* Pods-LearnOpenGLESWithGPUImageTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LearnOpenGLESWithGPUImageTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LearnOpenGLESWithGPUImageTests/Pods-LearnOpenGLESWithGPUImageTests.debug.xcconfig"; sourceTree = "<group>"; };
+		A62521C6FC4666F758AF946D /* Pods-LearnOpenGLESWithGPUImage.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LearnOpenGLESWithGPUImage.release.xcconfig"; path = "Pods/Target Support Files/Pods-LearnOpenGLESWithGPUImage/Pods-LearnOpenGLESWithGPUImage.release.xcconfig"; sourceTree = "<group>"; };
+		ADB1AC0CEFE3B08D84F0B1F3 /* libPods-LearnOpenGLESWithGPUImageTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LearnOpenGLESWithGPUImageTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B02D4D79FDF691E335A297E0 /* libPods-LearnOpenGLESWithGPUImage.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LearnOpenGLESWithGPUImage.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B1A5000E6F27E0BD492E90F8 /* Pods-LearnOpenGLESWithGPUImage.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LearnOpenGLESWithGPUImage.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LearnOpenGLESWithGPUImage/Pods-LearnOpenGLESWithGPUImage.debug.xcconfig"; sourceTree = "<group>"; };
+		CE5E02DBCBAC1BB78ADE85E4 /* Pods-LearnOpenGLESWithGPUImageTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LearnOpenGLESWithGPUImageTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-LearnOpenGLESWithGPUImageTests/Pods-LearnOpenGLESWithGPUImageTests.release.xcconfig"; sourceTree = "<group>"; };
 		FDAAD24E1CE1CD7A00C7B6AC /* LearnOpenGLESWithGPUImage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LearnOpenGLESWithGPUImage.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FDAAD2521CE1CD7A00C7B6AC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		FDAAD2541CE1CD7A00C7B6AC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -55,7 +59,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A81D786061F7FD4742A0EE20 /* libPods.a in Frameworks */,
+				CD29047A52EFC4F49ED1A47E /* libPods-LearnOpenGLESWithGPUImage.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,27 +67,22 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6B90830C1264B892ED18AC54 /* libPods-LearnOpenGLESWithGPUImageTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		03AA89C3FE34264FF1778C66 /* Pods */ = {
+		710093C077F573153B5C2405 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				0DF47ABB77D8F1CED25E3249 /* Pods.debug.xcconfig */,
-				F545DC3F8A69164BBEB6B777 /* Pods.release.xcconfig */,
+				B1A5000E6F27E0BD492E90F8 /* Pods-LearnOpenGLESWithGPUImage.debug.xcconfig */,
+				A62521C6FC4666F758AF946D /* Pods-LearnOpenGLESWithGPUImage.release.xcconfig */,
+				8432663D47507357D39116D3 /* Pods-LearnOpenGLESWithGPUImageTests.debug.xcconfig */,
+				CE5E02DBCBAC1BB78ADE85E4 /* Pods-LearnOpenGLESWithGPUImageTests.release.xcconfig */,
 			);
 			name = Pods;
-			sourceTree = "<group>";
-		};
-		D9659FC4A6DF917D6C94AB64 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				D5E67A2FA02D978FA4A0D00F /* libPods.a */,
-			);
-			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		FD164C611CEB68000014E5DD /* useless */ = {
@@ -101,8 +100,8 @@
 				FDAAD2501CE1CD7A00C7B6AC /* LearnOpenGLESWithGPUImage */,
 				FDAAD26A1CE1CD7B00C7B6AC /* LearnOpenGLESWithGPUImageTests */,
 				FDAAD24F1CE1CD7A00C7B6AC /* Products */,
-				03AA89C3FE34264FF1778C66 /* Pods */,
-				D9659FC4A6DF917D6C94AB64 /* Frameworks */,
+				710093C077F573153B5C2405 /* Pods */,
+				FDE0535F524D4CE4D48B399C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -149,6 +148,15 @@
 			path = LearnOpenGLESWithGPUImageTests;
 			sourceTree = "<group>";
 		};
+		FDE0535F524D4CE4D48B399C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B02D4D79FDF691E335A297E0 /* libPods-LearnOpenGLESWithGPUImage.a */,
+				ADB1AC0CEFE3B08D84F0B1F3 /* libPods-LearnOpenGLESWithGPUImageTests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -156,12 +164,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FDAAD2701CE1CD7B00C7B6AC /* Build configuration list for PBXNativeTarget "LearnOpenGLESWithGPUImage" */;
 			buildPhases = (
-				8C496C994AC724C1CFFBFC01 /* Check Pods Manifest.lock */,
+				DFAAF1749BB44538A4337EA2 /* [CP] Check Pods Manifest.lock */,
 				FDAAD24A1CE1CD7A00C7B6AC /* Sources */,
 				FDAAD24B1CE1CD7A00C7B6AC /* Frameworks */,
 				FDAAD24C1CE1CD7A00C7B6AC /* Resources */,
-				65F82691FF4C4CD0828FC67F /* Embed Pods Frameworks */,
-				844A7942DC5BC8ED239EC5B4 /* Copy Pods Resources */,
+				9AB9DDCF96D017C542C9BC23 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -176,6 +183,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FDAAD2731CE1CD7B00C7B6AC /* Build configuration list for PBXNativeTarget "LearnOpenGLESWithGPUImageTests" */;
 			buildPhases = (
+				74BB6593555233E7EBE7B956 /* [CP] Check Pods Manifest.lock */,
 				FDAAD2631CE1CD7A00C7B6AC /* Sources */,
 				FDAAD2641CE1CD7A00C7B6AC /* Frameworks */,
 				FDAAD2651CE1CD7A00C7B6AC /* Resources */,
@@ -201,6 +209,7 @@
 				TargetAttributes = {
 					FDAAD24D1CE1CD7A00C7B6AC = {
 						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = 9U2KRZU6GT;
 					};
 					FDAAD2661CE1CD7A00C7B6AC = {
 						CreatedOnToolsVersion = 7.3;
@@ -250,49 +259,66 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		65F82691FF4C4CD0828FC67F /* Embed Pods Frameworks */ = {
+		74BB6593555233E7EBE7B956 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
-			name = "Embed Pods Frameworks";
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LearnOpenGLESWithGPUImageTests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		844A7942DC5BC8ED239EC5B4 /* Copy Pods Resources */ = {
+		9AB9DDCF96D017C542C9BC23 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-LearnOpenGLESWithGPUImage/Pods-LearnOpenGLESWithGPUImage-resources.sh",
+				"${PODS_ROOT}/../../../GPUImage-doc/framework/Resources/lookup.png",
+				"${PODS_ROOT}/../../../GPUImage-doc/framework/Resources/lookup_amatorka.png",
+				"${PODS_ROOT}/../../../GPUImage-doc/framework/Resources/lookup_miss_etikate.png",
+				"${PODS_ROOT}/../../../GPUImage-doc/framework/Resources/lookup_soft_elegance_1.png",
+				"${PODS_ROOT}/../../../GPUImage-doc/framework/Resources/lookup_soft_elegance_2.png",
 			);
-			name = "Copy Pods Resources";
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/lookup.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/lookup_amatorka.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/lookup_miss_etikate.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/lookup_soft_elegance_1.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/lookup_soft_elegance_2.png",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LearnOpenGLESWithGPUImage/Pods-LearnOpenGLESWithGPUImage-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		8C496C994AC724C1CFFBFC01 /* Check Pods Manifest.lock */ = {
+		DFAAF1749BB44538A4337EA2 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
-			name = "Check Pods Manifest.lock";
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LearnOpenGLESWithGPUImage-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -430,9 +456,10 @@
 		};
 		FDAAD2711CE1CD7B00C7B6AC /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0DF47ABB77D8F1CED25E3249 /* Pods.debug.xcconfig */;
+			baseConfigurationReference = B1A5000E6F27E0BD492E90F8 /* Pods-LearnOpenGLESWithGPUImage.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 9U2KRZU6GT;
 				INFOPLIST_FILE = LearnOpenGLESWithGPUImage/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -443,9 +470,10 @@
 		};
 		FDAAD2721CE1CD7B00C7B6AC /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F545DC3F8A69164BBEB6B777 /* Pods.release.xcconfig */;
+			baseConfigurationReference = A62521C6FC4666F758AF946D /* Pods-LearnOpenGLESWithGPUImage.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 9U2KRZU6GT;
 				INFOPLIST_FILE = LearnOpenGLESWithGPUImage/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -456,6 +484,7 @@
 		};
 		FDAAD2741CE1CD7B00C7B6AC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8432663D47507357D39116D3 /* Pods-LearnOpenGLESWithGPUImageTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = LearnOpenGLESWithGPUImageTests/Info.plist;
@@ -468,6 +497,7 @@
 		};
 		FDAAD2751CE1CD7B00C7B6AC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CE5E02DBCBAC1BB78ADE85E4 /* Pods-LearnOpenGLESWithGPUImageTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = LearnOpenGLESWithGPUImageTests/Info.plist;

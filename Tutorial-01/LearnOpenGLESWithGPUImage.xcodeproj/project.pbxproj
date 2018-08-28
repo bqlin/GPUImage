@@ -163,7 +163,6 @@
 				FDAAD24B1CE1CD7A00C7B6AC /* Frameworks */,
 				FDAAD24C1CE1CD7A00C7B6AC /* Resources */,
 				9726752FAC18AC5D704143B9 /* [CP] Copy Pods Resources */,
-				E566E63351A83AEA31E2FA0D /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -182,8 +181,6 @@
 				FDAAD2631CE1CD7A00C7B6AC /* Sources */,
 				FDAAD2641CE1CD7A00C7B6AC /* Frameworks */,
 				FDAAD2651CE1CD7A00C7B6AC /* Resources */,
-				B8A1605D7766096E040466F3 /* [CP] Embed Pods Frameworks */,
-				5DFFD6E766C65DB0564764A9 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -256,21 +253,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		5DFFD6E766C65DB0564764A9 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LearnOpenGLESWithGPUImageTests/Pods-LearnOpenGLESWithGPUImageTests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		61234CA87894D7BC8B8989B9 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -331,36 +313,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LearnOpenGLESWithGPUImage/Pods-LearnOpenGLESWithGPUImage-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		B8A1605D7766096E040466F3 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LearnOpenGLESWithGPUImageTests/Pods-LearnOpenGLESWithGPUImageTests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		E566E63351A83AEA31E2FA0D /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LearnOpenGLESWithGPUImage/Pods-LearnOpenGLESWithGPUImage-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
