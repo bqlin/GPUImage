@@ -32,6 +32,7 @@
 - (void)onCustom {
     GPUImageFilter *filter = [[GPUImageSepiaFilter alloc] init];
     UIImage *image = [UIImage imageNamed:@"face"];
+//    UIImage *image = [UIImage imageNamed:@"earth"];
     if (image) {
         self.mImageView.image = [filter imageByFilteringImage:image];
     }

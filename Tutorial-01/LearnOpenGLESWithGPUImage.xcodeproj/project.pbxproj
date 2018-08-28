@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		2D62D934EF027F22B48B4615 /* libPods-LearnOpenGLESWithGPUImageTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 657FED7B76AF5F7F774DBD35 /* libPods-LearnOpenGLESWithGPUImageTests.a */; };
 		99301D819B8306E6DC20AA0D /* libPods-LearnOpenGLESWithGPUImage.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 76933434039011A717F03650 /* libPods-LearnOpenGLESWithGPUImage.a */; };
+		FB17A6502134F2AE0090006B /* earth.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FB17A64E2134F2AE0090006B /* earth.jpg */; };
+		FB17A6522134F55C0090006B /* face.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FB17A6512134F55C0090006B /* face.jpg */; };
 		FDAAD2531CE1CD7A00C7B6AC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FDAAD2521CE1CD7A00C7B6AC /* main.m */; };
 		FDAAD2561CE1CD7A00C7B6AC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FDAAD2551CE1CD7A00C7B6AC /* AppDelegate.m */; };
 		FDAAD2591CE1CD7A00C7B6AC /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FDAAD2581CE1CD7A00C7B6AC /* ViewController.m */; };
@@ -36,6 +38,8 @@
 		76933434039011A717F03650 /* libPods-LearnOpenGLESWithGPUImage.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LearnOpenGLESWithGPUImage.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7D400462C88C1B50DAEBA59C /* Pods-LearnOpenGLESWithGPUImageTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LearnOpenGLESWithGPUImageTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LearnOpenGLESWithGPUImageTests/Pods-LearnOpenGLESWithGPUImageTests.debug.xcconfig"; sourceTree = "<group>"; };
 		D5E67A2FA02D978FA4A0D00F /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		FB17A64E2134F2AE0090006B /* earth.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = earth.jpg; path = ../../CommonResources/earth.jpg; sourceTree = "<group>"; };
+		FB17A6512134F55C0090006B /* face.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = face.jpg; path = ../../CommonResources/face.jpg; sourceTree = "<group>"; };
 		FDAAD24E1CE1CD7A00C7B6AC /* LearnOpenGLESWithGPUImage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LearnOpenGLESWithGPUImage.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FDAAD2521CE1CD7A00C7B6AC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		FDAAD2541CE1CD7A00C7B6AC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -131,6 +135,8 @@
 		FDAAD2511CE1CD7A00C7B6AC /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				FB17A6512134F55C0090006B /* face.jpg */,
+				FB17A64E2134F2AE0090006B /* earth.jpg */,
 				FDAAD2521CE1CD7A00C7B6AC /* main.m */,
 			);
 			name = "Supporting Files";
@@ -233,6 +239,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				FDAAD2611CE1CD7A00C7B6AC /* LaunchScreen.storyboard in Resources */,
+				FB17A6522134F55C0090006B /* face.jpg in Resources */,
+				FB17A6502134F2AE0090006B /* earth.jpg in Resources */,
 				FDAAD25E1CE1CD7A00C7B6AC /* Assets.xcassets in Resources */,
 				FDAAD25C1CE1CD7A00C7B6AC /* Main.storyboard in Resources */,
 			);
