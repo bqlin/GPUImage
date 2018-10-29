@@ -13,7 +13,7 @@
 
 @interface ViewController ()
 @property (strong, nonatomic) IBOutlet GPUImageView *mGPUImageView;
-@property (nonatomic , strong) GPUImageVideoCamera *mGPUVideoCamera;
+@property (nonatomic, strong) GPUImageVideoCamera *mGPUVideoCamera;
 @end
 
 @implementation ViewController
@@ -21,8 +21,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
-    self.mGPUVideoCamera = [[GPUImageVideoCamera alloc] initWithSessionPreset:AVCaptureSessionPreset640x480 cameraPosition:AVCaptureDevicePositionBack];
-    self.mGPUImageView.fillMode = kGPUImageFillModeStretch;//kGPUImageFillModePreserveAspectRatioAndFill;
+    self.mGPUVideoCamera = [[GPUImageVideoCamera alloc] initWithSessionPreset:AVCaptureSessionPresetPhoto cameraPosition:AVCaptureDevicePositionBack];
+    self.mGPUImageView.fillMode = kGPUImageFillModePreserveAspectRatio;//kGPUImageFillModePreserveAspectRatioAndFill;
+    //_mGPUVideoCamera.runBenchmark = YES;
     
     GPUImageSepiaFilter* filter = [[GPUImageSepiaFilter alloc] init];
     [self.mGPUVideoCamera addTarget:filter];
