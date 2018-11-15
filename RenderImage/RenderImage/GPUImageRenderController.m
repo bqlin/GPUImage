@@ -7,6 +7,7 @@
 //
 
 #import "GPUImageRenderController.h"
+#import <GPUImage.h>
 
 @interface GPUImageRenderController ()
 
@@ -16,7 +17,18 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    self.view.backgroundColor = [UIColor lightGrayColor];
+    
+    GPUImagePicture *picture = [[GPUImagePicture alloc] initWithImage:[UIImage imageNamed:@"concentric_circle_calibration_plate.jpg"]];
+    
+    CGFloat width = [UIScreen mainScreen].bounds.size.width;
+    GPUImageView *renderView = [[GPUImageView alloc] initWithFrame:CGRectMake(0, 100, width, width)];
+    [self.view addSubview:renderView];
+    
+    [picture addTarget:renderView];
+    
+//    [picture processImage];
+    [picture processImage];
 }
 
 - (void)didReceiveMemoryWarning {

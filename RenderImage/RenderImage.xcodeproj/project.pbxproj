@@ -16,6 +16,7 @@
 		FBB0F9DB219D6AEF0077B873 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FBB0F9DA219D6AEF0077B873 /* main.m */; };
 		FBB0F9E3219D6C4D0077B873 /* GPUImageRenderController.m in Sources */ = {isa = PBXBuildFile; fileRef = FBB0F9E2219D6C4D0077B873 /* GPUImageRenderController.m */; };
 		FBB0F9E6219D6C650077B873 /* GLRenderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FBB0F9E5219D6C650077B873 /* GLRenderViewController.m */; };
+		FBB0F9E8219D6F300077B873 /* concentric_circle_calibration_plate.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FBB0F9E7219D6F300077B873 /* concentric_circle_calibration_plate.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		FBB0F9E2219D6C4D0077B873 /* GPUImageRenderController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GPUImageRenderController.m; sourceTree = "<group>"; };
 		FBB0F9E4219D6C650077B873 /* GLRenderViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GLRenderViewController.h; sourceTree = "<group>"; };
 		FBB0F9E5219D6C650077B873 /* GLRenderViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GLRenderViewController.m; sourceTree = "<group>"; };
+		FBB0F9E7219D6F300077B873 /* concentric_circle_calibration_plate.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = concentric_circle_calibration_plate.jpg; path = ../../CommonResources/concentric_circle_calibration_plate.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +90,7 @@
 		FBB0F9CA219D6AED0077B873 /* RenderImage */ = {
 			isa = PBXGroup;
 			children = (
+				FBB0F9E7219D6F300077B873 /* concentric_circle_calibration_plate.jpg */,
 				FBB0F9CB219D6AED0077B873 /* AppDelegate.h */,
 				FBB0F9CC219D6AED0077B873 /* AppDelegate.m */,
 				FBB0F9CE219D6AED0077B873 /* ViewController.h */,
@@ -167,6 +170,7 @@
 				FBB0F9D8219D6AEF0077B873 /* LaunchScreen.storyboard in Resources */,
 				FBB0F9D5219D6AEF0077B873 /* Assets.xcassets in Resources */,
 				FBB0F9D3219D6AED0077B873 /* Main.storyboard in Resources */,
+				FBB0F9E8219D6F300077B873 /* concentric_circle_calibration_plate.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

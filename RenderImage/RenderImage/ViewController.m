@@ -7,6 +7,8 @@
 //
 
 #import "ViewController.h"
+#import "GPUImageRenderController.h"
+#import "GLRenderViewController.h"
 
 @interface ViewController ()
 
@@ -20,8 +22,10 @@
 }
 
 - (IBAction)GPUImageAction:(id)sender {
+    [self.navigationController pushViewController:[GPUImageRenderController new] animated:YES];
 }
 - (IBAction)GLAction:(id)sender {
+    [self.navigationController pushViewController:[GLRenderViewController new] animated:YES];
 }
 
 - (void)didReceiveMemoryWarning {
