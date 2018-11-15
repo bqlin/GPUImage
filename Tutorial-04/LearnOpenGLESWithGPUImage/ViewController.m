@@ -23,7 +23,7 @@
     [super viewDidLoad];
     GPUImageView *primaryView = [[GPUImageView alloc] initWithFrame:self.view.frame];
     self.view = primaryView;
-    UIImage *inputImage = [UIImage imageNamed:@"face.png"];
+    UIImage *inputImage = [UIImage imageNamed:@"face.jpg"];
     _sourcePicture = [[GPUImagePicture alloc] initWithImage:inputImage];
     _sepiaFilter = [[GPUImageTiltShiftFilter alloc] init];
     _sepiaFilter.blurRadiusInPixels = 40.0;

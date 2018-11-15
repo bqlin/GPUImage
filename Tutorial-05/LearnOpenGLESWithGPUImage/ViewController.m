@@ -16,8 +16,8 @@
 @property (nonatomic , strong) GPUImageMovieWriter *movieWriter;
 @property (nonatomic , strong) GPUImageView *filterView;
 
-@property (nonatomic , strong) UIButton *mButton;
-@property (nonatomic , strong) UILabel  *mLabel;
+@property (weak, nonatomic) IBOutlet UIButton *recordButton;
+@property (weak, nonatomic) IBOutlet UILabel *timeLabel;
 @property (nonatomic , assign) long     mLabelTime;
 @property (nonatomic , strong) NSTimer  *mTimer;
 
@@ -35,22 +35,7 @@
     
     _filter = [[GPUImageSepiaFilter alloc] init];
     _filterView = [[GPUImageView alloc] initWithFrame:self.view.frame];
-    self.view = _filterView;
-    
-    _mButton = [[UIButton alloc] initWithFrame:CGRectMake(10, 10, 50, 50)];
-    [_mButton setTitle:@"录制" forState:UIControlStateNormal];
-    [_mButton sizeToFit];
-    [self.view addSubview:_mButton];
-    [_mButton addTarget:self action:@selector(onClick:) forControlEvents:UIControlEventTouchUpInside];
-    
-    _mLabel = [[UILabel alloc] initWithFrame:CGRectMake(80, 20, 50, 100)];
-    _mLabel.hidden = YES;
-    _mLabel.textColor = [UIColor whiteColor];
-    [self.view addSubview:_mLabel];
-    
-    UISlider *slider = [[UISlider alloc] initWithFrame:CGRectMake(10, 40, 100, 40)];
-    [slider addTarget:self action:@selector(updateSliderValue:) forControlEvents:UIControlEventValueChanged];
-    [self.view addSubview:slider];
+    [self.view insertSubview:_filterView atIndex:0];
     
     [_videoCamera addTarget:_filter];
     [_filter addTarget:_filterView];
@@ -68,14 +53,11 @@
     NSLog(@"test");
 }
 
-
-
 - (void)onTimer:(id)sender {
-    _mLabel.text  = [NSString stringWithFormat:@"录制时间:%lds", _mLabelTime++];
-    [_mLabel sizeToFit];
+    _timeLabel.text  = [NSString stringWithFormat:@"录制时间:%lds", _mLabelTime++];
 }
 
-- (void)onClick:(UIButton *)sender {
+- (IBAction)recordButtonAction:(UIButton *)sender {
     NSString *pathToMovie = [NSHomeDirectory() stringByAppendingPathComponent:@"Documents/Movie4.m4v"];
     NSURL *movieURL = [NSURL fileURLWithPath:pathToMovie];
     if([sender.currentTitle isEqualToString:@"录制"]) {
@@ -89,14 +71,14 @@
         [_movieWriter startRecording];
         
         _mLabelTime = 0;
-        _mLabel.hidden = NO;
+        _timeLabel.hidden = NO;
         [self onTimer:nil];
         _mTimer = [NSTimer scheduledTimerWithTimeInterval:1.0 target:self selector:@selector(onTimer:) userInfo:nil repeats:YES];
     }
     else {
         [sender setTitle:@"录制" forState:UIControlStateNormal];
         NSLog(@"End recording");
-        _mLabel.hidden = YES;
+        _timeLabel.hidden = YES;
         if (_mTimer) {
             [_mTimer invalidate];
         }
@@ -127,11 +109,8 @@
     }
 }
 
-- (void)updateSliderValue:(id)sender
-{
+- (IBAction)sliderAction:(UISlider *)sender {
     [(GPUImageSepiaFilter *)_filter setIntensity:[(UISlider *)sender value]];
 }
-
-
 
 @end
