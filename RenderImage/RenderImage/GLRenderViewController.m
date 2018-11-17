@@ -7,6 +7,8 @@
 //
 
 #import "GLRenderViewController.h"
+#import "ImageRender.h"
+#import "GLImageView.h"
 
 @interface GLRenderViewController ()
 
@@ -17,6 +19,23 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor lightGrayColor];
+    
+    [[ContextManager sharedInstance] context];
+    UIImage *image = [UIImage imageNamed:@"concentric_circle_calibration_plate.jpg"];
+    ImageRender *imageRender = [[ImageRender alloc] init];
+    imageRender.imageRef = image.CGImage;
+    [imageRender fetchInfo];
+    
+    CGFloat width = [UIScreen mainScreen].bounds.size.width;
+    GLImageView *renderView = [[GLImageView alloc] initWithFrame:CGRectMake(0, 100, width, width)];
+    [self.view addSubview:renderView];
+    
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        [EAGLContext setCurrentContext:[ContextManager sharedInstance].context];
+        renderView.inputImageSize = imageRender.pixelSizeToUseForTexture;
+        renderView.inputFramebufferForDisplay = imageRender.outputFramebuffer;
+        [renderView newFrameReadyAtTime:kCMTimeIndefinite atIndex:0];
+    });
 }
 
 - (void)didReceiveMemoryWarning {
