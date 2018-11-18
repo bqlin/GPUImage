@@ -100,7 +100,7 @@ static NSString *const kStandardPassthroughFragmentShaderString = SHADER_STRING
     [[ContextManager sharedInstance] context];
     _displayProgram = [[ContextManager sharedInstance] programForVertexShaderString:kStandardVertexShaderString fragmentShaderString:kStandardPassthroughFragmentShaderString];
     // 链接
-    if (_displayProgram.linked) {
+    if (!_displayProgram.linked) {
         [_displayProgram addAttribute:@"position"];
         [_displayProgram addAttribute:@"inputTextureCoordinate"];
         [_displayProgram link];
@@ -242,7 +242,7 @@ static NSString *const kStandardPassthroughFragmentShaderString = SHADER_STRING
     // 显示
     [self presentFramebuffer];
 //    [inputFramebufferForDisplay unlock];
-    _inputFramebufferForDisplay = nil;
+//    _inputFramebufferForDisplay = nil;
 }
 
 - (void)setDisplayFramebuffer {
@@ -251,12 +251,12 @@ static NSString *const kStandardPassthroughFragmentShaderString = SHADER_STRING
     }
     
     glBindFramebuffer(GL_FRAMEBUFFER, _displayFramebuffer);
-    glViewport(0, 0, (GLint)_inputImageSize.width, (GLint)_inputImageSize.height);
+    glViewport(0, 0, (GLint)_sizeInPixels.width, (GLint)_sizeInPixels.height);
 }
 
 - (void)createDisplayFramebuffer {
     // 设置上下文
-    [[ContextManager sharedInstance] context];
+    EAGLContext *contex = [[ContextManager sharedInstance] context];
     
     // 创建、绑定用于显示的帧缓存
     glGenFramebuffers(1, &_displayFramebuffer);
@@ -267,7 +267,7 @@ static NSString *const kStandardPassthroughFragmentShaderString = SHADER_STRING
     glBindRenderbuffer(GL_RENDERBUFFER, _displayRenderbuffer);
     
     // 绑定显示渲染结果的图层
-    [[[ContextManager sharedInstance] context] renderbufferStorage:GL_RENDERBUFFER fromDrawable:(CAEAGLLayer *)self.layer];
+    [contex renderbufferStorage:GL_RENDERBUFFER fromDrawable:(CAEAGLLayer *)self.layer];
     
     // 获取渲染后的宽高
     GLint backingWidth, backingHeight;

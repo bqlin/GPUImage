@@ -19,6 +19,7 @@
 - (void)fetchInfo {
     size_t widthOfImage = CGImageGetWidth(_imageRef);
     size_t heightOfImage = CGImageGetHeight(_imageRef);
+    NSAssert( widthOfImage > 0 && heightOfImage > 0, @"Passed image must not be empty - it should be at least 1px tall and width");
     
     CGSize pixelSizeToUseForTexture = CGSizeMake(widthOfImage, heightOfImage);
     NSLog(@"图像尺寸：%@", NSStringFromCGSize(pixelSizeToUseForTexture));
@@ -39,8 +40,8 @@
     [[ContextManager sharedInstance] context];
     
     _outputFramebuffer = [[ContextManager sharedInstance].framebufferCache fetchFramebufferForSize:pixelSizeToUseForTexture onlyTexture:YES];
-    glBindTexture(GL_TEXTURE_2D, _outputFramebuffer.texture);
-    glTexImage2D(GL_TEXTURE_2D, 0, GL_RGBA, widthOfImage, heightOfImage, 0, format, GL_UNSIGNED_BYTE, imageData);
+    glBindTexture(GL_TEXTURE_2D, (int)_outputFramebuffer.texture);
+    glTexImage2D(GL_TEXTURE_2D, 0, GL_RGBA, (GLsizei)widthOfImage, (GLsizei)heightOfImage, 0, format, GL_UNSIGNED_BYTE, imageData);
     glBindTexture(GL_TEXTURE_2D, 0);
     
     // 清空资源

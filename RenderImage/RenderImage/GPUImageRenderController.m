@@ -25,10 +25,14 @@
     GPUImageView *renderView = [[GPUImageView alloc] initWithFrame:CGRectMake(0, 100, width, width)];
     [self.view addSubview:renderView];
     
-    [picture addTarget:renderView];
-    
+//    [picture addTarget:renderView];
 //    [picture processImage];
-    [picture processImage];
+    
+    // 等同于以下实现
+    //[renderView setInputImageSize:picture.outputImageSize];
+    [renderView setInputSize:picture.outputImageSize atIndex:0];
+    [renderView setInputFramebuffer:picture.framebufferForOutput atIndex:0];
+    [renderView newFrameReadyAtTime:kCMTimeIndefinite atIndex:0];
 }
 
 - (void)didReceiveMemoryWarning {

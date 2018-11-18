@@ -30,12 +30,9 @@
     GLImageView *renderView = [[GLImageView alloc] initWithFrame:CGRectMake(0, 100, width, width)];
     [self.view addSubview:renderView];
     
-    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-        [EAGLContext setCurrentContext:[ContextManager sharedInstance].context];
-        renderView.inputImageSize = imageRender.pixelSizeToUseForTexture;
-        renderView.inputFramebufferForDisplay = imageRender.outputFramebuffer;
-        [renderView newFrameReadyAtTime:kCMTimeIndefinite atIndex:0];
-    });
+    renderView.inputImageSize = imageRender.pixelSizeToUseForTexture;
+    renderView.inputFramebufferForDisplay = imageRender.outputFramebuffer;
+    [renderView newFrameReadyAtTime:kCMTimeIndefinite atIndex:0];
 }
 
 - (void)didReceiveMemoryWarning {

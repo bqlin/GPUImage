@@ -52,6 +52,8 @@ static id _sharedInstance = nil;
 - (EAGLContext *)context {
     if (!_context) {
         _context = [[EAGLContext alloc] initWithAPI:kEAGLRenderingAPIOpenGLES2];
+    }
+    if ([EAGLContext currentContext] != _context) {
         [EAGLContext setCurrentContext:_context];
     }
     return _context;
