@@ -7,8 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0353477E21A92D3600C3214E /* FramebufferCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 0353477421A92D3600C3214E /* FramebufferCache.m */; };
+		0353477F21A92D3600C3214E /* ImageRender.m in Sources */ = {isa = PBXBuildFile; fileRef = 0353477621A92D3600C3214E /* ImageRender.m */; };
+		0353478021A92D3600C3214E /* ContextManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0353477721A92D3600C3214E /* ContextManager.m */; };
+		0353478121A92D3600C3214E /* GLShaderProgram.m in Sources */ = {isa = PBXBuildFile; fileRef = 0353477821A92D3600C3214E /* GLShaderProgram.m */; };
+		0353478221A92D3600C3214E /* GLImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0353477921A92D3600C3214E /* GLImageView.m */; };
+		0353478321A92D3600C3214E /* Framebuffer.m in Sources */ = {isa = PBXBuildFile; fileRef = 0353477C21A92D3600C3214E /* Framebuffer.m */; };
 		97B1EAFE75E1E015A1452FB0 /* libPods-RenderImage.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ADDB1BED9826147B72655C98 /* libPods-RenderImage.a */; };
-		FB5EDA08219FB7C600874844 /* FramebufferCache.m in Sources */ = {isa = PBXBuildFile; fileRef = FB5EDA07219FB7C600874844 /* FramebufferCache.m */; };
 		FBB0F9CD219D6AED0077B873 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FBB0F9CC219D6AED0077B873 /* AppDelegate.m */; };
 		FBB0F9D0219D6AED0077B873 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FBB0F9CF219D6AED0077B873 /* ViewController.m */; };
 		FBB0F9D3219D6AED0077B873 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FBB0F9D1219D6AED0077B873 /* Main.storyboard */; };
@@ -18,19 +23,24 @@
 		FBB0F9E3219D6C4D0077B873 /* GPUImageRenderController.m in Sources */ = {isa = PBXBuildFile; fileRef = FBB0F9E2219D6C4D0077B873 /* GPUImageRenderController.m */; };
 		FBB0F9E6219D6C650077B873 /* GLRenderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FBB0F9E5219D6C650077B873 /* GLRenderViewController.m */; };
 		FBB0F9E8219D6F300077B873 /* concentric_circle_calibration_plate.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FBB0F9E7219D6F300077B873 /* concentric_circle_calibration_plate.jpg */; };
-		FBB0F9EB219D73DF0077B873 /* ImageRender.m in Sources */ = {isa = PBXBuildFile; fileRef = FBB0F9EA219D73DF0077B873 /* ImageRender.m */; };
-		FBB0F9EE219D7B200077B873 /* ContextManager.m in Sources */ = {isa = PBXBuildFile; fileRef = FBB0F9ED219D7B200077B873 /* ContextManager.m */; };
-		FBB0F9F1219D7CA30077B873 /* Framebuffer.m in Sources */ = {isa = PBXBuildFile; fileRef = FBB0F9F0219D7CA30077B873 /* Framebuffer.m */; };
-		FBB0F9F4219D858A0077B873 /* GLImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = FBB0F9F3219D858A0077B873 /* GLImageView.m */; };
-		FBCE28BF219E5E5E00C3993E /* GLShaderProgram.m in Sources */ = {isa = PBXBuildFile; fileRef = FBCE28BE219E5E5E00C3993E /* GLShaderProgram.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0353477221A92D3600C3214E /* GLImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLImageView.h; sourceTree = "<group>"; };
+		0353477321A92D3600C3214E /* GLShaderProgram.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLShaderProgram.h; sourceTree = "<group>"; };
+		0353477421A92D3600C3214E /* FramebufferCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FramebufferCache.m; sourceTree = "<group>"; };
+		0353477521A92D3600C3214E /* Framebuffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Framebuffer.h; sourceTree = "<group>"; };
+		0353477621A92D3600C3214E /* ImageRender.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageRender.m; sourceTree = "<group>"; };
+		0353477721A92D3600C3214E /* ContextManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContextManager.m; sourceTree = "<group>"; };
+		0353477821A92D3600C3214E /* GLShaderProgram.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLShaderProgram.m; sourceTree = "<group>"; };
+		0353477921A92D3600C3214E /* GLImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLImageView.m; sourceTree = "<group>"; };
+		0353477A21A92D3600C3214E /* FramebufferCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FramebufferCache.h; sourceTree = "<group>"; };
+		0353477B21A92D3600C3214E /* ContextManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContextManager.h; sourceTree = "<group>"; };
+		0353477C21A92D3600C3214E /* Framebuffer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Framebuffer.m; sourceTree = "<group>"; };
+		0353477D21A92D3600C3214E /* ImageRender.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageRender.h; sourceTree = "<group>"; };
 		1C32482B738E4E4F05638C25 /* Pods-RenderImage.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RenderImage.release.xcconfig"; path = "Pods/Target Support Files/Pods-RenderImage/Pods-RenderImage.release.xcconfig"; sourceTree = "<group>"; };
 		4E1BA9B83D78E74AC5BE56D8 /* Pods-RenderImage.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RenderImage.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RenderImage/Pods-RenderImage.debug.xcconfig"; sourceTree = "<group>"; };
 		ADDB1BED9826147B72655C98 /* libPods-RenderImage.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RenderImage.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		FB5EDA06219FB7C500874844 /* FramebufferCache.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FramebufferCache.h; sourceTree = "<group>"; };
-		FB5EDA07219FB7C600874844 /* FramebufferCache.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FramebufferCache.m; sourceTree = "<group>"; };
 		FBB0F9C8219D6AED0077B873 /* RenderImage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RenderImage.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FBB0F9CB219D6AED0077B873 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		FBB0F9CC219D6AED0077B873 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -46,16 +56,6 @@
 		FBB0F9E4219D6C650077B873 /* GLRenderViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GLRenderViewController.h; sourceTree = "<group>"; };
 		FBB0F9E5219D6C650077B873 /* GLRenderViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GLRenderViewController.m; sourceTree = "<group>"; };
 		FBB0F9E7219D6F300077B873 /* concentric_circle_calibration_plate.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = concentric_circle_calibration_plate.jpg; path = ../../CommonResources/concentric_circle_calibration_plate.jpg; sourceTree = "<group>"; };
-		FBB0F9E9219D73DF0077B873 /* ImageRender.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ImageRender.h; sourceTree = "<group>"; };
-		FBB0F9EA219D73DF0077B873 /* ImageRender.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ImageRender.m; sourceTree = "<group>"; };
-		FBB0F9EC219D7B200077B873 /* ContextManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ContextManager.h; sourceTree = "<group>"; };
-		FBB0F9ED219D7B200077B873 /* ContextManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ContextManager.m; sourceTree = "<group>"; };
-		FBB0F9EF219D7CA30077B873 /* Framebuffer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Framebuffer.h; sourceTree = "<group>"; };
-		FBB0F9F0219D7CA30077B873 /* Framebuffer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Framebuffer.m; sourceTree = "<group>"; };
-		FBB0F9F2219D858A0077B873 /* GLImageView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GLImageView.h; sourceTree = "<group>"; };
-		FBB0F9F3219D858A0077B873 /* GLImageView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GLImageView.m; sourceTree = "<group>"; };
-		FBCE28BD219E5E5E00C3993E /* GLShaderProgram.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GLShaderProgram.h; sourceTree = "<group>"; };
-		FBCE28BE219E5E5E00C3993E /* GLShaderProgram.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GLShaderProgram.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +70,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0353477121A92D3600C3214E /* CustomGLRender */ = {
+			isa = PBXGroup;
+			children = (
+				0353477B21A92D3600C3214E /* ContextManager.h */,
+				0353477721A92D3600C3214E /* ContextManager.m */,
+				0353477521A92D3600C3214E /* Framebuffer.h */,
+				0353477C21A92D3600C3214E /* Framebuffer.m */,
+				0353477A21A92D3600C3214E /* FramebufferCache.h */,
+				0353477421A92D3600C3214E /* FramebufferCache.m */,
+				0353477221A92D3600C3214E /* GLImageView.h */,
+				0353477921A92D3600C3214E /* GLImageView.m */,
+				0353477321A92D3600C3214E /* GLShaderProgram.h */,
+				0353477821A92D3600C3214E /* GLShaderProgram.m */,
+				0353477D21A92D3600C3214E /* ImageRender.h */,
+				0353477621A92D3600C3214E /* ImageRender.m */,
+			);
+			path = CustomGLRender;
+			sourceTree = "<group>";
+		};
 		347A57D9DBCF1F6AEE74AF94 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -108,6 +127,7 @@
 		FBB0F9CA219D6AED0077B873 /* RenderImage */ = {
 			isa = PBXGroup;
 			children = (
+				0353477121A92D3600C3214E /* CustomGLRender */,
 				FBB0F9E7219D6F300077B873 /* concentric_circle_calibration_plate.jpg */,
 				FBB0F9CB219D6AED0077B873 /* AppDelegate.h */,
 				FBB0F9CC219D6AED0077B873 /* AppDelegate.m */,
@@ -117,18 +137,6 @@
 				FBB0F9E2219D6C4D0077B873 /* GPUImageRenderController.m */,
 				FBB0F9E4219D6C650077B873 /* GLRenderViewController.h */,
 				FBB0F9E5219D6C650077B873 /* GLRenderViewController.m */,
-				FBB0F9E9219D73DF0077B873 /* ImageRender.h */,
-				FBB0F9EA219D73DF0077B873 /* ImageRender.m */,
-				FBB0F9EC219D7B200077B873 /* ContextManager.h */,
-				FBB0F9ED219D7B200077B873 /* ContextManager.m */,
-				FBCE28BD219E5E5E00C3993E /* GLShaderProgram.h */,
-				FBCE28BE219E5E5E00C3993E /* GLShaderProgram.m */,
-				FBB0F9EF219D7CA30077B873 /* Framebuffer.h */,
-				FBB0F9F0219D7CA30077B873 /* Framebuffer.m */,
-				FB5EDA06219FB7C500874844 /* FramebufferCache.h */,
-				FB5EDA07219FB7C600874844 /* FramebufferCache.m */,
-				FBB0F9F2219D858A0077B873 /* GLImageView.h */,
-				FBB0F9F3219D858A0077B873 /* GLImageView.m */,
 				FBB0F9D1219D6AED0077B873 /* Main.storyboard */,
 				FBB0F9D4219D6AEF0077B873 /* Assets.xcassets */,
 				FBB0F9D6219D6AEF0077B873 /* LaunchScreen.storyboard */,
@@ -259,16 +267,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				FBB0F9E3219D6C4D0077B873 /* GPUImageRenderController.m in Sources */,
-				FBB0F9EB219D73DF0077B873 /* ImageRender.m in Sources */,
+				0353478221A92D3600C3214E /* GLImageView.m in Sources */,
 				FBB0F9D0219D6AED0077B873 /* ViewController.m in Sources */,
-				FBB0F9EE219D7B200077B873 /* ContextManager.m in Sources */,
+				0353477E21A92D3600C3214E /* FramebufferCache.m in Sources */,
+				0353478021A92D3600C3214E /* ContextManager.m in Sources */,
+				0353478321A92D3600C3214E /* Framebuffer.m in Sources */,
 				FBB0F9DB219D6AEF0077B873 /* main.m in Sources */,
 				FBB0F9E6219D6C650077B873 /* GLRenderViewController.m in Sources */,
-				FB5EDA08219FB7C600874844 /* FramebufferCache.m in Sources */,
-				FBCE28BF219E5E5E00C3993E /* GLShaderProgram.m in Sources */,
-				FBB0F9F1219D7CA30077B873 /* Framebuffer.m in Sources */,
-				FBB0F9F4219D858A0077B873 /* GLImageView.m in Sources */,
+				0353478121A92D3600C3214E /* GLShaderProgram.m in Sources */,
 				FBB0F9CD219D6AED0077B873 /* AppDelegate.m in Sources */,
+				0353477F21A92D3600C3214E /* ImageRender.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

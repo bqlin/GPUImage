@@ -25,26 +25,24 @@
     NSLog(@"图像尺寸：%@", NSStringFromCGSize(pixelSizeToUseForTexture));
     _pixelSizeToUseForTexture = pixelSizeToUseForTexture;
     
-    GLubyte *imageData = NULL;
-    CFDataRef dataFromImageDataProvider = NULL;
-    GLenum format = GL_BGRA;
-    BOOL isLitteEndian = YES;
-    BOOL alphaFirst = NO;
-    BOOL premultiplied = NO;
-    
+	//BOOL isLitteEndian = YES;
+	//BOOL alphaFirst = NO;
+	//BOOL premultiplied = NO;
+	
     // 直接访问图片数据
-    dataFromImageDataProvider = CGDataProviderCopyData(CGImageGetDataProvider(_imageRef));
-    imageData = (GLubyte *)CFDataGetBytePtr(dataFromImageDataProvider);
+    CFDataRef dataFromImageDataProvider = CGDataProviderCopyData(CGImageGetDataProvider(_imageRef));
+    GLubyte *imageData = (GLubyte *)CFDataGetBytePtr(dataFromImageDataProvider);
     
     // 创建并设置上下文
     [[ContextManager sharedInstance] context];
-    
+	
+	// 创建纹理缓存，并绑定纹理
     _outputFramebuffer = [[ContextManager sharedInstance].framebufferCache fetchFramebufferForSize:pixelSizeToUseForTexture onlyTexture:YES];
     glBindTexture(GL_TEXTURE_2D, (int)_outputFramebuffer.texture);
-    glTexImage2D(GL_TEXTURE_2D, 0, GL_RGBA, (GLsizei)widthOfImage, (GLsizei)heightOfImage, 0, format, GL_UNSIGNED_BYTE, imageData);
-    glBindTexture(GL_TEXTURE_2D, 0);
-    
+    glTexImage2D(GL_TEXTURE_2D, 0, GL_RGBA, (GLsizei)widthOfImage, (GLsizei)heightOfImage, 0, GL_BGRA, GL_UNSIGNED_BYTE, imageData);
+	
     // 清空资源
+	glBindTexture(GL_TEXTURE_2D, 0);
     CFRelease(dataFromImageDataProvider);
 }
 

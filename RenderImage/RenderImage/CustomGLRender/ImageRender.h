@@ -11,8 +11,12 @@
 
 @interface ImageRender : NSObject
 
+/// 输入图像
 @property (nonatomic, assign) CGImageRef imageRef;
+
+/// 图像输出帧缓存
 @property (nonatomic, strong, readonly) Framebuffer *outputFramebuffer;
+/// 纹理的像素尺寸
 @property (nonatomic, assign, readonly) CGSize pixelSizeToUseForTexture;
 
 - (void)fetchInfo;

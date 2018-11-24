@@ -16,6 +16,7 @@
 
 + (instancetype)sharedInstance;
 
+/// 共享的上下文
 @property (nonatomic, strong, readonly) EAGLContext *context;
 
 @property (nonatomic, strong, readonly) FramebufferCache *framebufferCache;
