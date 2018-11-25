@@ -11,6 +11,7 @@
 #import <OpenGLES/ES2/gl.h>
 #import <OpenGLES/ES2/glext.h>
 
+/// 纹理配置
 typedef struct {
     GLenum minFilter;
     GLenum magFilter;
@@ -37,11 +38,13 @@ NS_INLINE TextureOptions DefaultTextureOptions() {
 
 @interface Framebuffer : NSObject
 
-/// 纹理缓存 ID
+/// 绑定的纹理缓存 ID
 @property (nonatomic, assign, readonly) GLuint texture;
 
+/// 设置的纹理选项
 @property (nonatomic, assign, readonly) TextureOptions textureOptions;
 
+/// 设置的帧缓存尺寸
 @property (nonatomic, assign, readonly) CGSize framebufferSize;
 
 @property (nonatomic, assign, readonly) BOOL missingFramebuffer;

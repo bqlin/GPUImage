@@ -8,6 +8,9 @@
 
 #import <GLKit/GLKit.h>
 
+/**
+ 着色器相关操作封装
+ */
 @interface GLShaderProgram : NSObject
 
 @property (nonatomic, assign, readonly) BOOL linked;

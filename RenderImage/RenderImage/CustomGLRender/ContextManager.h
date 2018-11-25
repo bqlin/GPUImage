@@ -10,16 +10,12 @@
 #import <GLKit/GLKit.h>
 #import "Framebuffer.h"
 #import "GLShaderProgram.h"
-#import "FramebufferCache.h"
 
 @interface ContextManager : NSObject
 
 + (instancetype)sharedInstance;
 
-/// 共享的上下文
 @property (nonatomic, strong, readonly) EAGLContext *context;
-
-@property (nonatomic, strong, readonly) FramebufferCache *framebufferCache;
 
 @property (nonatomic, assign, readonly) CVOpenGLESTextureCacheRef coreVideoTextureCache;
 

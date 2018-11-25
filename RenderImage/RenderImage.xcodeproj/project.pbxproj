@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0353477E21A92D3600C3214E /* FramebufferCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 0353477421A92D3600C3214E /* FramebufferCache.m */; };
 		0353477F21A92D3600C3214E /* ImageRender.m in Sources */ = {isa = PBXBuildFile; fileRef = 0353477621A92D3600C3214E /* ImageRender.m */; };
 		0353478021A92D3600C3214E /* ContextManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0353477721A92D3600C3214E /* ContextManager.m */; };
 		0353478121A92D3600C3214E /* GLShaderProgram.m in Sources */ = {isa = PBXBuildFile; fileRef = 0353477821A92D3600C3214E /* GLShaderProgram.m */; };
@@ -28,13 +27,11 @@
 /* Begin PBXFileReference section */
 		0353477221A92D3600C3214E /* GLImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLImageView.h; sourceTree = "<group>"; };
 		0353477321A92D3600C3214E /* GLShaderProgram.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLShaderProgram.h; sourceTree = "<group>"; };
-		0353477421A92D3600C3214E /* FramebufferCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FramebufferCache.m; sourceTree = "<group>"; };
 		0353477521A92D3600C3214E /* Framebuffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Framebuffer.h; sourceTree = "<group>"; };
 		0353477621A92D3600C3214E /* ImageRender.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageRender.m; sourceTree = "<group>"; };
 		0353477721A92D3600C3214E /* ContextManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContextManager.m; sourceTree = "<group>"; };
 		0353477821A92D3600C3214E /* GLShaderProgram.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLShaderProgram.m; sourceTree = "<group>"; };
 		0353477921A92D3600C3214E /* GLImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLImageView.m; sourceTree = "<group>"; };
-		0353477A21A92D3600C3214E /* FramebufferCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FramebufferCache.h; sourceTree = "<group>"; };
 		0353477B21A92D3600C3214E /* ContextManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContextManager.h; sourceTree = "<group>"; };
 		0353477C21A92D3600C3214E /* Framebuffer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Framebuffer.m; sourceTree = "<group>"; };
 		0353477D21A92D3600C3214E /* ImageRender.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageRender.h; sourceTree = "<group>"; };
@@ -77,8 +74,6 @@
 				0353477721A92D3600C3214E /* ContextManager.m */,
 				0353477521A92D3600C3214E /* Framebuffer.h */,
 				0353477C21A92D3600C3214E /* Framebuffer.m */,
-				0353477A21A92D3600C3214E /* FramebufferCache.h */,
-				0353477421A92D3600C3214E /* FramebufferCache.m */,
 				0353477221A92D3600C3214E /* GLImageView.h */,
 				0353477921A92D3600C3214E /* GLImageView.m */,
 				0353477321A92D3600C3214E /* GLShaderProgram.h */,
@@ -269,7 +264,6 @@
 				FBB0F9E3219D6C4D0077B873 /* GPUImageRenderController.m in Sources */,
 				0353478221A92D3600C3214E /* GLImageView.m in Sources */,
 				FBB0F9D0219D6AED0077B873 /* ViewController.m in Sources */,
-				0353477E21A92D3600C3214E /* FramebufferCache.m in Sources */,
 				0353478021A92D3600C3214E /* ContextManager.m in Sources */,
 				0353478321A92D3600C3214E /* Framebuffer.m in Sources */,
 				FBB0F9DB219D6AEF0077B873 /* main.m in Sources */,

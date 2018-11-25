@@ -36,8 +36,9 @@
     // 创建并设置上下文
     [[ContextManager sharedInstance] context];
 	
-	// 创建纹理缓存，并绑定纹理
-    _outputFramebuffer = [[ContextManager sharedInstance].framebufferCache fetchFramebufferForSize:pixelSizeToUseForTexture onlyTexture:YES];
+	// 创建输出纹理缓存，并绑定纹理
+    //_outputFramebuffer = [[ContextManager sharedInstance].framebufferCache fetchFramebufferForSize:pixelSizeToUseForTexture onlyTexture:YES];
+	_outputFramebuffer = [[Framebuffer alloc] initWithSize:pixelSizeToUseForTexture textureOptions:DefaultTextureOptions() onlyTexture:YES];
     glBindTexture(GL_TEXTURE_2D, (int)_outputFramebuffer.texture);
     glTexImage2D(GL_TEXTURE_2D, 0, GL_RGBA, (GLsizei)widthOfImage, (GLsizei)heightOfImage, 0, GL_BGRA, GL_UNSIGNED_BYTE, imageData);
 	

@@ -110,20 +110,17 @@ static NSString *const kStandardPassthroughFragmentShaderString = SHADER_STRING
     _displayPositionAttribute = [_displayProgram indexOfAttribute:@"position"];
     _displayTextureCoordinateAttribute = [_displayProgram indexOfAttribute:@"inputTextureCoordinate"];
     _displayInputTextureUniform = [_displayProgram indexOfUniform:@"inputImageTexture"];
-    
+	
+	// 设置当前的u着色器程序，并使用
     [ContextManager sharedInstance].currentShaderProgram = _displayProgram;
     glEnableVertexAttribArray(_displayPositionAttribute);
     glEnableVertexAttribArray(_displayTextureCoordinateAttribute);
     
-    // 创建帧缓存
+    // 创建显示帧缓存
     [self createDisplayFramebuffer];
 }
 
 #pragma mark - property
-
-- (void)setInputFramebufferForDisplay:(Framebuffer *)inputFramebufferForDisplay {
-    _inputFramebufferForDisplay = inputFramebufferForDisplay;
-}
 
 - (void)setInputImageSize:(CGSize)inputImageSize {
     _inputImageSize = inputImageSize;
@@ -254,6 +251,7 @@ static NSString *const kStandardPassthroughFragmentShaderString = SHADER_STRING
     glViewport(0, 0, (GLint)_sizeInPixels.width, (GLint)_sizeInPixels.height);
 }
 
+/// 创建显示帧缓存
 - (void)createDisplayFramebuffer {
     // 设置上下文
     EAGLContext *contex = [[ContextManager sharedInstance] context];
@@ -273,8 +271,7 @@ static NSString *const kStandardPassthroughFragmentShaderString = SHADER_STRING
     GLint backingWidth, backingHeight;
     glGetRenderbufferParameteriv(GL_RENDERBUFFER, GL_RENDERBUFFER_WIDTH, &backingWidth);
     glGetRenderbufferParameteriv(GL_RENDERBUFFER, GL_RENDERBUFFER_HEIGHT, &backingHeight);
-    if ( (backingWidth == 0) || (backingHeight == 0) )
-    {
+    if ( (backingWidth == 0) || (backingHeight == 0) ) {
         [self destroyDisplayFramebuffer];
         return;
     }

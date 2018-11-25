@@ -12,8 +12,6 @@
 
 @property (nonatomic, strong) EAGLContext *context;
 
-@property (nonatomic, strong) FramebufferCache *framebufferCache;
-
 @property (nonatomic, assign) CVOpenGLESTextureCacheRef coreVideoTextureCache;
 
 @end
@@ -49,6 +47,7 @@ static id _sharedInstance = nil;
 
 #pragma mark - property
 
+/// 共享的上下文
 - (EAGLContext *)context {
     if (!_context) {
         _context = [[EAGLContext alloc] initWithAPI:kEAGLRenderingAPIOpenGLES2];
@@ -59,13 +58,7 @@ static id _sharedInstance = nil;
     return _context;
 }
 
-- (FramebufferCache *)framebufferCache {
-    if (!_framebufferCache) {
-        _framebufferCache = [[FramebufferCache alloc] init];
-    }
-    return _framebufferCache;
-}
-
+/// 共享的 CoreVideo 纹理缓存
 - (CVOpenGLESTextureCacheRef)coreVideoTextureCache {
     if (!_coreVideoTextureCache) {
         CVReturn error = CVOpenGLESTextureCacheCreate(kCFAllocatorDefault, NULL, self.context, NULL, &_coreVideoTextureCache);
@@ -74,6 +67,7 @@ static id _sharedInstance = nil;
     return _coreVideoTextureCache;
 }
 
+/// 设置当前的着色器程序，并使用
 - (void)setCurrentShaderProgram:(GLShaderProgram *)currentShaderProgram {
     [EAGLContext setCurrentContext:self.context];
     if (_currentShaderProgram == currentShaderProgram) return;
