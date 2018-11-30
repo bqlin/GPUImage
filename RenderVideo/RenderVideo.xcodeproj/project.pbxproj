@@ -1,0 +1,429 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		27A72F2EC46FE119C8F9AF68 /* libPods-RenderVideo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CC895EAAA068EECE399461B /* libPods-RenderVideo.a */; };
+		FBEF7FA021B128B4009DF25B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FBEF7F9F21B128B4009DF25B /* AppDelegate.m */; };
+		FBEF7FA321B128B4009DF25B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FBEF7FA221B128B4009DF25B /* ViewController.m */; };
+		FBEF7FA621B128B4009DF25B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FBEF7FA421B128B4009DF25B /* Main.storyboard */; };
+		FBEF7FA821B128B6009DF25B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FBEF7FA721B128B6009DF25B /* Assets.xcassets */; };
+		FBEF7FAB21B128B6009DF25B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FBEF7FA921B128B6009DF25B /* LaunchScreen.storyboard */; };
+		FBEF7FAE21B128B6009DF25B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FBEF7FAD21B128B6009DF25B /* main.m */; };
+		FBEF7FB621B129F7009DF25B /* GPUImageRenderController.m in Sources */ = {isa = PBXBuildFile; fileRef = FBEF7FB521B129F7009DF25B /* GPUImageRenderController.m */; };
+		FBEF7FBC21B12A21009DF25B /* GLRenderController.m in Sources */ = {isa = PBXBuildFile; fileRef = FBEF7FBB21B12A21009DF25B /* GLRenderController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		28809FEEBFDC0271346CDCF7 /* Pods-RenderVideo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RenderVideo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RenderVideo/Pods-RenderVideo.debug.xcconfig"; sourceTree = "<group>"; };
+		3CC895EAAA068EECE399461B /* libPods-RenderVideo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RenderVideo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AB291E7C31D8161B180C99D4 /* Pods-RenderVideo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RenderVideo.release.xcconfig"; path = "Pods/Target Support Files/Pods-RenderVideo/Pods-RenderVideo.release.xcconfig"; sourceTree = "<group>"; };
+		FBEF7F9B21B128B4009DF25B /* RenderVideo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RenderVideo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FBEF7F9E21B128B4009DF25B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		FBEF7F9F21B128B4009DF25B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		FBEF7FA121B128B4009DF25B /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		FBEF7FA221B128B4009DF25B /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		FBEF7FA521B128B4009DF25B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FBEF7FA721B128B6009DF25B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FBEF7FAA21B128B6009DF25B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FBEF7FAC21B128B6009DF25B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FBEF7FAD21B128B6009DF25B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		FBEF7FB421B129F7009DF25B /* GPUImageRenderController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GPUImageRenderController.h; sourceTree = "<group>"; };
+		FBEF7FB521B129F7009DF25B /* GPUImageRenderController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GPUImageRenderController.m; sourceTree = "<group>"; };
+		FBEF7FBA21B12A21009DF25B /* GLRenderController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GLRenderController.h; sourceTree = "<group>"; };
+		FBEF7FBB21B12A21009DF25B /* GLRenderController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GLRenderController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FBEF7F9821B128B4009DF25B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				27A72F2EC46FE119C8F9AF68 /* libPods-RenderVideo.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		082DFAC8857B733EB2948978 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				28809FEEBFDC0271346CDCF7 /* Pods-RenderVideo.debug.xcconfig */,
+				AB291E7C31D8161B180C99D4 /* Pods-RenderVideo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		C9CF5B2D4B16A6F1CA11C545 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3CC895EAAA068EECE399461B /* libPods-RenderVideo.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FBEF7F9221B128B4009DF25B = {
+			isa = PBXGroup;
+			children = (
+				FBEF7F9D21B128B4009DF25B /* RenderVideo */,
+				FBEF7F9C21B128B4009DF25B /* Products */,
+				082DFAC8857B733EB2948978 /* Pods */,
+				C9CF5B2D4B16A6F1CA11C545 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		FBEF7F9C21B128B4009DF25B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FBEF7F9B21B128B4009DF25B /* RenderVideo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FBEF7F9D21B128B4009DF25B /* RenderVideo */ = {
+			isa = PBXGroup;
+			children = (
+				FBEF7F9E21B128B4009DF25B /* AppDelegate.h */,
+				FBEF7F9F21B128B4009DF25B /* AppDelegate.m */,
+				FBEF7FA121B128B4009DF25B /* ViewController.h */,
+				FBEF7FA221B128B4009DF25B /* ViewController.m */,
+				FBEF7FB421B129F7009DF25B /* GPUImageRenderController.h */,
+				FBEF7FB521B129F7009DF25B /* GPUImageRenderController.m */,
+				FBEF7FBA21B12A21009DF25B /* GLRenderController.h */,
+				FBEF7FBB21B12A21009DF25B /* GLRenderController.m */,
+				FBEF7FA421B128B4009DF25B /* Main.storyboard */,
+				FBEF7FA721B128B6009DF25B /* Assets.xcassets */,
+				FBEF7FA921B128B6009DF25B /* LaunchScreen.storyboard */,
+				FBEF7FAC21B128B6009DF25B /* Info.plist */,
+				FBEF7FAD21B128B6009DF25B /* main.m */,
+			);
+			path = RenderVideo;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FBEF7F9A21B128B4009DF25B /* RenderVideo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FBEF7FB121B128B6009DF25B /* Build configuration list for PBXNativeTarget "RenderVideo" */;
+			buildPhases = (
+				D1A55A4D86AE40718D102E72 /* [CP] Check Pods Manifest.lock */,
+				FBEF7F9721B128B4009DF25B /* Sources */,
+				FBEF7F9821B128B4009DF25B /* Frameworks */,
+				FBEF7F9921B128B4009DF25B /* Resources */,
+				329854F03986C5F37C34A768 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RenderVideo;
+			productName = RenderVideo;
+			productReference = FBEF7F9B21B128B4009DF25B /* RenderVideo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FBEF7F9321B128B4009DF25B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = Bq;
+				TargetAttributes = {
+					FBEF7F9A21B128B4009DF25B = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+				};
+			};
+			buildConfigurationList = FBEF7F9621B128B4009DF25B /* Build configuration list for PBXProject "RenderVideo" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FBEF7F9221B128B4009DF25B;
+			productRefGroup = FBEF7F9C21B128B4009DF25B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FBEF7F9A21B128B4009DF25B /* RenderVideo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FBEF7F9921B128B4009DF25B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FBEF7FAB21B128B6009DF25B /* LaunchScreen.storyboard in Resources */,
+				FBEF7FA821B128B6009DF25B /* Assets.xcassets in Resources */,
+				FBEF7FA621B128B4009DF25B /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		329854F03986C5F37C34A768 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-RenderVideo/Pods-RenderVideo-resources.sh",
+				"${PODS_ROOT}/../../../GPUImage-doc/framework/Resources/lookup.png",
+				"${PODS_ROOT}/../../../GPUImage-doc/framework/Resources/lookup_amatorka.png",
+				"${PODS_ROOT}/../../../GPUImage-doc/framework/Resources/lookup_miss_etikate.png",
+				"${PODS_ROOT}/../../../GPUImage-doc/framework/Resources/lookup_soft_elegance_1.png",
+				"${PODS_ROOT}/../../../GPUImage-doc/framework/Resources/lookup_soft_elegance_2.png",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/lookup.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/lookup_amatorka.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/lookup_miss_etikate.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/lookup_soft_elegance_1.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/lookup_soft_elegance_2.png",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RenderVideo/Pods-RenderVideo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D1A55A4D86AE40718D102E72 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RenderVideo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FBEF7F9721B128B4009DF25B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FBEF7FB621B129F7009DF25B /* GPUImageRenderController.m in Sources */,
+				FBEF7FA321B128B4009DF25B /* ViewController.m in Sources */,
+				FBEF7FAE21B128B6009DF25B /* main.m in Sources */,
+				FBEF7FBC21B12A21009DF25B /* GLRenderController.m in Sources */,
+				FBEF7FA021B128B4009DF25B /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		FBEF7FA421B128B4009DF25B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FBEF7FA521B128B4009DF25B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FBEF7FA921B128B6009DF25B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FBEF7FAA21B128B6009DF25B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FBEF7FAF21B128B6009DF25B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		FBEF7FB021B128B6009DF25B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FBEF7FB221B128B6009DF25B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 28809FEEBFDC0271346CDCF7 /* Pods-RenderVideo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = V7WL667MJM;
+				INFOPLIST_FILE = RenderVideo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = bq.RenderVideo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FBEF7FB321B128B6009DF25B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AB291E7C31D8161B180C99D4 /* Pods-RenderVideo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = V7WL667MJM;
+				INFOPLIST_FILE = RenderVideo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = bq.RenderVideo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FBEF7F9621B128B4009DF25B /* Build configuration list for PBXProject "RenderVideo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FBEF7FAF21B128B6009DF25B /* Debug */,
+				FBEF7FB021B128B6009DF25B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FBEF7FB121B128B6009DF25B /* Build configuration list for PBXNativeTarget "RenderVideo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FBEF7FB221B128B6009DF25B /* Debug */,
+				FBEF7FB321B128B6009DF25B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FBEF7F9321B128B4009DF25B /* Project object */;
+}
