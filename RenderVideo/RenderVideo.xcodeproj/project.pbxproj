@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		27A72F2EC46FE119C8F9AF68 /* libPods-RenderVideo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CC895EAAA068EECE399461B /* libPods-RenderVideo.a */; };
+		FB74FB5F21B76BD700F592BC /* local.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = FB74FB5E21B76BD700F592BC /* local.mp4 */; };
 		FBEF7FA021B128B4009DF25B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FBEF7F9F21B128B4009DF25B /* AppDelegate.m */; };
 		FBEF7FA321B128B4009DF25B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FBEF7FA221B128B4009DF25B /* ViewController.m */; };
 		FBEF7FA621B128B4009DF25B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FBEF7FA421B128B4009DF25B /* Main.storyboard */; };
@@ -16,12 +17,14 @@
 		FBEF7FAE21B128B6009DF25B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FBEF7FAD21B128B6009DF25B /* main.m */; };
 		FBEF7FB621B129F7009DF25B /* GPUImageRenderController.m in Sources */ = {isa = PBXBuildFile; fileRef = FBEF7FB521B129F7009DF25B /* GPUImageRenderController.m */; };
 		FBEF7FBC21B12A21009DF25B /* GLRenderController.m in Sources */ = {isa = PBXBuildFile; fileRef = FBEF7FBB21B12A21009DF25B /* GLRenderController.m */; };
+		FBF0E9E821B9225D00E3B8D2 /* ReaderImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FBF0E9E721B9225D00E3B8D2 /* ReaderImageViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		28809FEEBFDC0271346CDCF7 /* Pods-RenderVideo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RenderVideo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RenderVideo/Pods-RenderVideo.debug.xcconfig"; sourceTree = "<group>"; };
 		3CC895EAAA068EECE399461B /* libPods-RenderVideo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RenderVideo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB291E7C31D8161B180C99D4 /* Pods-RenderVideo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RenderVideo.release.xcconfig"; path = "Pods/Target Support Files/Pods-RenderVideo/Pods-RenderVideo.release.xcconfig"; sourceTree = "<group>"; };
+		FB74FB5E21B76BD700F592BC /* local.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = local.mp4; path = ../../../../../../Movies/local.mp4; sourceTree = "<group>"; };
 		FBEF7F9B21B128B4009DF25B /* RenderVideo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RenderVideo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FBEF7F9E21B128B4009DF25B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		FBEF7F9F21B128B4009DF25B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -36,6 +39,8 @@
 		FBEF7FB521B129F7009DF25B /* GPUImageRenderController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GPUImageRenderController.m; sourceTree = "<group>"; };
 		FBEF7FBA21B12A21009DF25B /* GLRenderController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GLRenderController.h; sourceTree = "<group>"; };
 		FBEF7FBB21B12A21009DF25B /* GLRenderController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GLRenderController.m; sourceTree = "<group>"; };
+		FBF0E9E621B9225D00E3B8D2 /* ReaderImageViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ReaderImageViewController.h; sourceTree = "<group>"; };
+		FBF0E9E721B9225D00E3B8D2 /* ReaderImageViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ReaderImageViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +97,8 @@
 				FBEF7F9F21B128B4009DF25B /* AppDelegate.m */,
 				FBEF7FA121B128B4009DF25B /* ViewController.h */,
 				FBEF7FA221B128B4009DF25B /* ViewController.m */,
+				FBF0E9E621B9225D00E3B8D2 /* ReaderImageViewController.h */,
+				FBF0E9E721B9225D00E3B8D2 /* ReaderImageViewController.m */,
 				FBEF7FB421B129F7009DF25B /* GPUImageRenderController.h */,
 				FBEF7FB521B129F7009DF25B /* GPUImageRenderController.m */,
 				FBEF7FBA21B12A21009DF25B /* GLRenderController.h */,
@@ -101,6 +108,7 @@
 				FBEF7FA921B128B6009DF25B /* LaunchScreen.storyboard */,
 				FBEF7FAC21B128B6009DF25B /* Info.plist */,
 				FBEF7FAD21B128B6009DF25B /* main.m */,
+				FB74FB5E21B76BD700F592BC /* local.mp4 */,
 			);
 			path = RenderVideo;
 			sourceTree = "<group>";
@@ -167,6 +175,7 @@
 				FBEF7FAB21B128B6009DF25B /* LaunchScreen.storyboard in Resources */,
 				FBEF7FA821B128B6009DF25B /* Assets.xcassets in Resources */,
 				FBEF7FA621B128B4009DF25B /* Main.storyboard in Resources */,
+				FB74FB5F21B76BD700F592BC /* local.mp4 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -225,6 +234,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FBEF7FB621B129F7009DF25B /* GPUImageRenderController.m in Sources */,
+				FBF0E9E821B9225D00E3B8D2 /* ReaderImageViewController.m in Sources */,
 				FBEF7FA321B128B4009DF25B /* ViewController.m in Sources */,
 				FBEF7FAE21B128B6009DF25B /* main.m in Sources */,
 				FBEF7FBC21B12A21009DF25B /* GLRenderController.m in Sources */,

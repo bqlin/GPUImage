@@ -9,6 +9,7 @@
 #import "ViewController.h"
 #import "GPUImageRenderController.h"
 #import "GLRenderController.h"
+#import "ReaderImageViewController.h"
 
 @interface ViewController ()
 
@@ -34,10 +35,10 @@
             [self.navigationController pushViewController:[GPUImageRenderController new] animated:YES];
         } break;
         case 1:{
-            [self.navigationController pushViewController:[GLRenderController new] animated:YES];
+            [self.navigationController pushViewController:[ReaderImageViewController new] animated:YES];
         } break;
         case 2:{
-            
+            [self.navigationController pushViewController:[GLRenderController new] animated:YES];
         } break;
         case 3:{
             

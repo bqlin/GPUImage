@@ -7,17 +7,46 @@
 //
 
 #import "GPUImageRenderController.h"
+#import <GPUImage.h>
 
 @interface GPUImageRenderController ()
+
+@property (nonatomic, strong) AVPlayer *player;
 
 @end
 
 @implementation GPUImageRenderController
 
+- (void)dealloc {
+    NSLog(@"%s", __FUNCTION__);
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     self.view.backgroundColor = [UIColor lightGrayColor];
+    
+    GPUImageView *preivewView = [[GPUImageView alloc] initWithFrame:self.view.bounds];
+    [self.view addSubview:preivewView];
+    preivewView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
+    
+    NSString *path = [[NSBundle mainBundle] pathForResource:@"local" ofType:@"mp4"];
+    NSURL *URL = [NSURL fileURLWithPath:path];
+    
+    // 使用 URL 初始化
+    GPUImageMovie *movie = [[GPUImageMovie alloc] initWithURL:URL];
+    
+//    // 使用 playerItem 初始化，使用 AVPlayerItem 需要搭配 AVPlayer 使用
+//    AVPlayerItem *playerItem = [AVPlayerItem playerItemWithURL:URL];
+//    GPUImageMovie *movie = [[GPUImageMovie alloc] initWithPlayerItem:playerItem];
+//    AVPlayer *player = [AVPlayer playerWithPlayerItem:playerItem];
+//    [player play];
+//    _player = player;
+    
+    movie.playAtActualSpeed = YES;
+    
+    [movie addTarget:preivewView];
+    [movie startProcessing];
 }
 
 - (void)didReceiveMemoryWarning {
