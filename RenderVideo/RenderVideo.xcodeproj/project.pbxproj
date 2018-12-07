@@ -18,6 +18,12 @@
 		FBEF7FB621B129F7009DF25B /* GPUImageRenderController.m in Sources */ = {isa = PBXBuildFile; fileRef = FBEF7FB521B129F7009DF25B /* GPUImageRenderController.m */; };
 		FBEF7FBC21B12A21009DF25B /* GLRenderController.m in Sources */ = {isa = PBXBuildFile; fileRef = FBEF7FBB21B12A21009DF25B /* GLRenderController.m */; };
 		FBF0E9E821B9225D00E3B8D2 /* ReaderImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FBF0E9E721B9225D00E3B8D2 /* ReaderImageViewController.m */; };
+		FBF0EA1221B92B8800E3B8D2 /* AssetFrameReader.m in Sources */ = {isa = PBXBuildFile; fileRef = FBF0EA1121B92B8800E3B8D2 /* AssetFrameReader.m */; };
+		FBF5A94C21BA08A500588D4A /* ImageRender.m in Sources */ = {isa = PBXBuildFile; fileRef = FBF5A94521BA08A500588D4A /* ImageRender.m */; };
+		FBF5A94D21BA08A500588D4A /* ContextManager.m in Sources */ = {isa = PBXBuildFile; fileRef = FBF5A94621BA08A500588D4A /* ContextManager.m */; };
+		FBF5A94E21BA08A500588D4A /* GLShaderProgram.m in Sources */ = {isa = PBXBuildFile; fileRef = FBF5A94721BA08A500588D4A /* GLShaderProgram.m */; };
+		FBF5A94F21BA08A500588D4A /* GLImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = FBF5A94821BA08A500588D4A /* GLImageView.m */; };
+		FBF5A95021BA08A500588D4A /* Framebuffer.m in Sources */ = {isa = PBXBuildFile; fileRef = FBF5A94A21BA08A500588D4A /* Framebuffer.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +47,18 @@
 		FBEF7FBB21B12A21009DF25B /* GLRenderController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GLRenderController.m; sourceTree = "<group>"; };
 		FBF0E9E621B9225D00E3B8D2 /* ReaderImageViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ReaderImageViewController.h; sourceTree = "<group>"; };
 		FBF0E9E721B9225D00E3B8D2 /* ReaderImageViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ReaderImageViewController.m; sourceTree = "<group>"; };
+		FBF0EA1021B92B8800E3B8D2 /* AssetFrameReader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AssetFrameReader.h; sourceTree = "<group>"; };
+		FBF0EA1121B92B8800E3B8D2 /* AssetFrameReader.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AssetFrameReader.m; sourceTree = "<group>"; };
+		FBF5A94221BA08A500588D4A /* GLImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLImageView.h; sourceTree = "<group>"; };
+		FBF5A94321BA08A500588D4A /* GLShaderProgram.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLShaderProgram.h; sourceTree = "<group>"; };
+		FBF5A94421BA08A500588D4A /* Framebuffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Framebuffer.h; sourceTree = "<group>"; };
+		FBF5A94521BA08A500588D4A /* ImageRender.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageRender.m; sourceTree = "<group>"; };
+		FBF5A94621BA08A500588D4A /* ContextManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContextManager.m; sourceTree = "<group>"; };
+		FBF5A94721BA08A500588D4A /* GLShaderProgram.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLShaderProgram.m; sourceTree = "<group>"; };
+		FBF5A94821BA08A500588D4A /* GLImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLImageView.m; sourceTree = "<group>"; };
+		FBF5A94921BA08A500588D4A /* ContextManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContextManager.h; sourceTree = "<group>"; };
+		FBF5A94A21BA08A500588D4A /* Framebuffer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Framebuffer.m; sourceTree = "<group>"; };
+		FBF5A94B21BA08A500588D4A /* ImageRender.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageRender.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +111,7 @@
 		FBEF7F9D21B128B4009DF25B /* RenderVideo */ = {
 			isa = PBXGroup;
 			children = (
+				FBF5A94121BA08A500588D4A /* CustomGLRender */,
 				FBEF7F9E21B128B4009DF25B /* AppDelegate.h */,
 				FBEF7F9F21B128B4009DF25B /* AppDelegate.m */,
 				FBEF7FA121B128B4009DF25B /* ViewController.h */,
@@ -111,6 +130,26 @@
 				FB74FB5E21B76BD700F592BC /* local.mp4 */,
 			);
 			path = RenderVideo;
+			sourceTree = "<group>";
+		};
+		FBF5A94121BA08A500588D4A /* CustomGLRender */ = {
+			isa = PBXGroup;
+			children = (
+				FBF5A94921BA08A500588D4A /* ContextManager.h */,
+				FBF5A94621BA08A500588D4A /* ContextManager.m */,
+				FBF5A94421BA08A500588D4A /* Framebuffer.h */,
+				FBF5A94A21BA08A500588D4A /* Framebuffer.m */,
+				FBF5A94221BA08A500588D4A /* GLImageView.h */,
+				FBF5A94821BA08A500588D4A /* GLImageView.m */,
+				FBF5A94321BA08A500588D4A /* GLShaderProgram.h */,
+				FBF5A94721BA08A500588D4A /* GLShaderProgram.m */,
+				FBF5A94B21BA08A500588D4A /* ImageRender.h */,
+				FBF5A94521BA08A500588D4A /* ImageRender.m */,
+				FBF0EA1021B92B8800E3B8D2 /* AssetFrameReader.h */,
+				FBF0EA1121B92B8800E3B8D2 /* AssetFrameReader.m */,
+			);
+			name = CustomGLRender;
+			path = ../../CustomGLRender;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -233,12 +272,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FBF5A94E21BA08A500588D4A /* GLShaderProgram.m in Sources */,
 				FBEF7FB621B129F7009DF25B /* GPUImageRenderController.m in Sources */,
+				FBF5A94D21BA08A500588D4A /* ContextManager.m in Sources */,
 				FBF0E9E821B9225D00E3B8D2 /* ReaderImageViewController.m in Sources */,
 				FBEF7FA321B128B4009DF25B /* ViewController.m in Sources */,
+				FBF5A95021BA08A500588D4A /* Framebuffer.m in Sources */,
+				FBF5A94C21BA08A500588D4A /* ImageRender.m in Sources */,
 				FBEF7FAE21B128B6009DF25B /* main.m in Sources */,
+				FBF0EA1221B92B8800E3B8D2 /* AssetFrameReader.m in Sources */,
 				FBEF7FBC21B12A21009DF25B /* GLRenderController.m in Sources */,
 				FBEF7FA021B128B4009DF25B /* AppDelegate.m in Sources */,
+				FBF5A94F21BA08A500588D4A /* GLImageView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

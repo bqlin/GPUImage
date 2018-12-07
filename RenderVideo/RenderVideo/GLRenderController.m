@@ -7,8 +7,11 @@
 //
 
 #import "GLRenderController.h"
+#import "AssetFrameReader.h"
 
-@interface GLRenderController ()
+@interface GLRenderController ()<AssetFrameReaderDelegate>
+
+@property (nonatomic, strong) AssetFrameReader *reader;
 
 @end
 
@@ -22,6 +25,13 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     self.view.backgroundColor = [UIColor lightGrayColor];
+    
+    NSString *path = [[NSBundle mainBundle] pathForResource:@"local" ofType:@"mp4"];
+    NSURL *URL = [NSURL fileURLWithPath:path];
+    AVAsset *asset = [AVURLAsset assetWithURL:URL];
+    _reader = [AssetFrameReader readerForAsset:asset];
+    _reader.delegate = self;
+    [_reader startReading];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -38,5 +48,11 @@
     // Pass the selected object to the new view controller.
 }
 */
+
+#pragma mark - AssetFrameReaderDelegate
+
+- (void)reader:(AssetFrameReader *)reader didReadVideoSample:(CMSampleBufferRef)videoSampleBuffer {
+    NSLog(@"videoSample: %@", videoSampleBuffer);
+}
 
 @end
