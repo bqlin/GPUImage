@@ -53,4 +53,6 @@ NS_INLINE TextureOptions DefaultTextureOptions() {
 - (instancetype)initWithSize:(CGSize)framebufferSize overriddenTexture:(GLuint)inputTexture;
 - (instancetype)initWithSize:(CGSize)framebufferSize textureOptions:(TextureOptions)textureOptions onlyTexture:(BOOL)onlyGenerateTexture;
 
+- (void)activateFramebuffer;
+
 @end

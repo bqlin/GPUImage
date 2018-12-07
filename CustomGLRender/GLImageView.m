@@ -9,36 +9,7 @@
 #import "GLImageView.h"
 #import "ContextManager.h"
 #import "GLShaderProgram.h"
-
-#define STRINGIZE(x) #x
-#define STRINGIZE2(x) STRINGIZE(x)
-#define SHADER_STRING(text) @ STRINGIZE2(text)
-
-static NSString *const kStandardVertexShaderString = SHADER_STRING
-(
- attribute vec4 position;
- attribute vec4 inputTextureCoordinate;
- 
- varying vec2 textureCoordinate;
- 
- void main()
- {
-     gl_Position = position;
-     textureCoordinate = inputTextureCoordinate.xy;
- }
- );
-
-static NSString *const kStandardPassthroughFragmentShaderString = SHADER_STRING
-(
- varying highp vec2 textureCoordinate;
- 
- uniform sampler2D inputImageTexture;
- 
- void main()
- {
-     gl_FragColor = texture2D(inputImageTexture, textureCoordinate);
- }
- );
+#import "StandardShader.h"
 
 @interface GLImageView ()
 

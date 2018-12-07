@@ -24,6 +24,8 @@
 		FBF5A94E21BA08A500588D4A /* GLShaderProgram.m in Sources */ = {isa = PBXBuildFile; fileRef = FBF5A94721BA08A500588D4A /* GLShaderProgram.m */; };
 		FBF5A94F21BA08A500588D4A /* GLImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = FBF5A94821BA08A500588D4A /* GLImageView.m */; };
 		FBF5A95021BA08A500588D4A /* Framebuffer.m in Sources */ = {isa = PBXBuildFile; fileRef = FBF5A94A21BA08A500588D4A /* Framebuffer.m */; };
+		FBF5A95321BA0ADF00588D4A /* ColorConversion.m in Sources */ = {isa = PBXBuildFile; fileRef = FBF5A95221BA0ADF00588D4A /* ColorConversion.m */; };
+		FBF5A95621BA0EA000588D4A /* StandardShader.m in Sources */ = {isa = PBXBuildFile; fileRef = FBF5A95521BA0EA000588D4A /* StandardShader.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -59,6 +61,10 @@
 		FBF5A94921BA08A500588D4A /* ContextManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContextManager.h; sourceTree = "<group>"; };
 		FBF5A94A21BA08A500588D4A /* Framebuffer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Framebuffer.m; sourceTree = "<group>"; };
 		FBF5A94B21BA08A500588D4A /* ImageRender.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageRender.h; sourceTree = "<group>"; };
+		FBF5A95121BA0ADF00588D4A /* ColorConversion.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ColorConversion.h; sourceTree = "<group>"; };
+		FBF5A95221BA0ADF00588D4A /* ColorConversion.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ColorConversion.m; sourceTree = "<group>"; };
+		FBF5A95421BA0EA000588D4A /* StandardShader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StandardShader.h; sourceTree = "<group>"; };
+		FBF5A95521BA0EA000588D4A /* StandardShader.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StandardShader.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -147,6 +153,10 @@
 				FBF5A94521BA08A500588D4A /* ImageRender.m */,
 				FBF0EA1021B92B8800E3B8D2 /* AssetFrameReader.h */,
 				FBF0EA1121B92B8800E3B8D2 /* AssetFrameReader.m */,
+				FBF5A95121BA0ADF00588D4A /* ColorConversion.h */,
+				FBF5A95221BA0ADF00588D4A /* ColorConversion.m */,
+				FBF5A95421BA0EA000588D4A /* StandardShader.h */,
+				FBF5A95521BA0EA000588D4A /* StandardShader.m */,
 			);
 			name = CustomGLRender;
 			path = ../../CustomGLRender;
@@ -278,10 +288,12 @@
 				FBF0E9E821B9225D00E3B8D2 /* ReaderImageViewController.m in Sources */,
 				FBEF7FA321B128B4009DF25B /* ViewController.m in Sources */,
 				FBF5A95021BA08A500588D4A /* Framebuffer.m in Sources */,
+				FBF5A95321BA0ADF00588D4A /* ColorConversion.m in Sources */,
 				FBF5A94C21BA08A500588D4A /* ImageRender.m in Sources */,
 				FBEF7FAE21B128B6009DF25B /* main.m in Sources */,
 				FBF0EA1221B92B8800E3B8D2 /* AssetFrameReader.m in Sources */,
 				FBEF7FBC21B12A21009DF25B /* GLRenderController.m in Sources */,
+				FBF5A95621BA0EA000588D4A /* StandardShader.m in Sources */,
 				FBEF7FA021B128B4009DF25B /* AppDelegate.m in Sources */,
 				FBF5A94F21BA08A500588D4A /* GLImageView.m in Sources */,
 			);
