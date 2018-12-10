@@ -25,4 +25,6 @@
 
 - (void)presentBufferForDisplay;
 
++ (void)runSynchronouslyOnVideoProcessingQueueWithAction:(void (^)(void))action;
+
 @end

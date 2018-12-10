@@ -44,11 +44,15 @@
         _missingFramebuffer = onlyGenerateTexture;
         
         if (_missingFramebuffer) {
-            [[ContextManager sharedInstance] context];
-            [self generateTexture];
-            _framebuffer = 0;
+            [ContextManager runSynchronouslyOnVideoProcessingQueueWithAction:^{
+                [[ContextManager sharedInstance] context];
+                [self generateTexture];
+                self->_framebuffer = 0;
+            }];
         } else {
-            [self generateFramebuffer];
+            [ContextManager runSynchronouslyOnVideoProcessingQueueWithAction:^{
+                [self generateFramebuffer];
+            }];
         }
     }
     return self;
@@ -129,6 +133,11 @@
 }
 
 - (void)destroyFramebuffer {
+    [ContextManager runSynchronouslyOnVideoProcessingQueueWithAction:^{
+        [self _destroyFramebuffer];
+    }];
+}
+- (void)_destroyFramebuffer {
     [[ContextManager sharedInstance] context];
     if (_framebuffer) {
         glDeleteFramebuffers(1, &_framebuffer);

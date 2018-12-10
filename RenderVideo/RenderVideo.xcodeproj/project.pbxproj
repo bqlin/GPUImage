@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		27A72F2EC46FE119C8F9AF68 /* libPods-RenderVideo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CC895EAAA068EECE399461B /* libPods-RenderVideo.a */; };
+		FB67013C21BE551E00B1B97A /* VideoPixelReader.m in Sources */ = {isa = PBXBuildFile; fileRef = FB67013B21BE551E00B1B97A /* VideoPixelReader.m */; };
 		FB74FB5F21B76BD700F592BC /* local.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = FB74FB5E21B76BD700F592BC /* local.mp4 */; };
 		FBEF7FA021B128B4009DF25B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FBEF7F9F21B128B4009DF25B /* AppDelegate.m */; };
 		FBEF7FA321B128B4009DF25B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FBEF7FA221B128B4009DF25B /* ViewController.m */; };
@@ -32,6 +33,8 @@
 		28809FEEBFDC0271346CDCF7 /* Pods-RenderVideo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RenderVideo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RenderVideo/Pods-RenderVideo.debug.xcconfig"; sourceTree = "<group>"; };
 		3CC895EAAA068EECE399461B /* libPods-RenderVideo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RenderVideo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB291E7C31D8161B180C99D4 /* Pods-RenderVideo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RenderVideo.release.xcconfig"; path = "Pods/Target Support Files/Pods-RenderVideo/Pods-RenderVideo.release.xcconfig"; sourceTree = "<group>"; };
+		FB67013A21BE551E00B1B97A /* VideoPixelReader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VideoPixelReader.h; sourceTree = "<group>"; };
+		FB67013B21BE551E00B1B97A /* VideoPixelReader.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VideoPixelReader.m; sourceTree = "<group>"; };
 		FB74FB5E21B76BD700F592BC /* local.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = local.mp4; path = ../../../../../../Movies/local.mp4; sourceTree = "<group>"; };
 		FBEF7F9B21B128B4009DF25B /* RenderVideo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RenderVideo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FBEF7F9E21B128B4009DF25B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -153,6 +156,8 @@
 				FBF5A94521BA08A500588D4A /* ImageRender.m */,
 				FBF0EA1021B92B8800E3B8D2 /* AssetFrameReader.h */,
 				FBF0EA1121B92B8800E3B8D2 /* AssetFrameReader.m */,
+				FB67013A21BE551E00B1B97A /* VideoPixelReader.h */,
+				FB67013B21BE551E00B1B97A /* VideoPixelReader.m */,
 				FBF5A95121BA0ADF00588D4A /* ColorConversion.h */,
 				FBF5A95221BA0ADF00588D4A /* ColorConversion.m */,
 				FBF5A95421BA0EA000588D4A /* StandardShader.h */,
@@ -286,6 +291,7 @@
 				FBEF7FB621B129F7009DF25B /* GPUImageRenderController.m in Sources */,
 				FBF5A94D21BA08A500588D4A /* ContextManager.m in Sources */,
 				FBF0E9E821B9225D00E3B8D2 /* ReaderImageViewController.m in Sources */,
+				FB67013C21BE551E00B1B97A /* VideoPixelReader.m in Sources */,
 				FBEF7FA321B128B4009DF25B /* ViewController.m in Sources */,
 				FBF5A95021BA08A500588D4A /* Framebuffer.m in Sources */,
 				FBF5A95321BA0ADF00588D4A /* ColorConversion.m in Sources */,

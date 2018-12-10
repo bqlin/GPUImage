@@ -14,6 +14,8 @@
 
 @property (nonatomic, assign) CVOpenGLESTextureCacheRef coreVideoTextureCache;
 
+@property(nonatomic, strong, readonly) dispatch_queue_t contextQueue;
+
 @end
 
 @implementation ContextManager
@@ -43,7 +45,10 @@ static id _sharedInstance = nil;
     return _sharedInstance;
 }
 
-- (void)commonInit {}
+- (void)commonInit {
+    dispatch_queue_attr_t queueAtrribute = dispatch_queue_attr_make_with_qos_class(DISPATCH_QUEUE_SERIAL, QOS_CLASS_DEFAULT, 0);
+    _contextQueue = dispatch_queue_create("queue.GLRender", queueAtrribute);
+}
 
 #pragma mark - property
 
@@ -69,7 +74,7 @@ static id _sharedInstance = nil;
 
 /// 设置当前的着色器程序，并使用
 - (void)setCurrentShaderProgram:(GLShaderProgram *)currentShaderProgram {
-    [EAGLContext setCurrentContext:self.context];
+    [self context];
     if (_currentShaderProgram == currentShaderProgram) return;
     _currentShaderProgram = currentShaderProgram;
     [currentShaderProgram use];
@@ -87,6 +92,17 @@ static id _sharedInstance = nil;
     [self.context presentRenderbuffer:GL_RENDERBUFFER];
 }
 
-
++ (void)runSynchronouslyOnVideoProcessingQueueWithAction:(void (^)(void))action {
+    ContextManager *contextManager = [ContextManager sharedInstance];
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Wdeprecated-declarations"
+    if (dispatch_get_current_queue() == contextManager.contextQueue)
+#pragma clang diagnostic pop
+    {
+        action();
+    } else {
+        dispatch_sync(contextManager.contextQueue, action);
+    }
+}
 
 @end

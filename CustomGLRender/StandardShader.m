@@ -13,7 +13,7 @@
 #define SHADER_STRING(text) @ STRINGIZE2(text)
 
 /// 标准顶点着色器
-static NSString *const kStandardVertexShaderString = SHADER_STRING
+NSString *const kStandardVertexShaderString = SHADER_STRING
 (
  attribute vec4 position;
  attribute vec4 inputTextureCoordinate;
@@ -28,7 +28,7 @@ static NSString *const kStandardVertexShaderString = SHADER_STRING
  );
 
 /// 标准片元着色器
-static NSString *const kStandardPassthroughFragmentShaderString = SHADER_STRING
+NSString *const kStandardPassthroughFragmentShaderString = SHADER_STRING
 (
  varying highp vec2 textureCoordinate;
  

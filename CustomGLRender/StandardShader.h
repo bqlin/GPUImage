@@ -8,8 +8,8 @@
 
 #import <Foundation/Foundation.h>
 
-static NSString *const kStandardVertexShaderString;
-static NSString *const kStandardPassthroughFragmentShaderString;
+extern NSString *const kStandardVertexShaderString;
+extern NSString *const kStandardPassthroughFragmentShaderString;
 
 @interface StandardShader : NSObject
 

@@ -12,7 +12,7 @@
 #define STRINGIZE2(x) STRINGIZE(x)
 #define SHADER_STRING(text) @ STRINGIZE2(text)
 
-static NSString * const kFragmentShaderStringForYuvFullRanageConversion = SHADER_STRING
+NSString * const kFragmentShaderStringForYuvFullRanageConversion = SHADER_STRING
 (
  varying highp vec2 textureCoordinate;
  
@@ -33,7 +33,7 @@ static NSString * const kFragmentShaderStringForYuvFullRanageConversion = SHADER
  }
  );
 
-static NSString * const kFragmentShaderStringForYuvVideoRanageConversion = SHADER_STRING
+NSString * const kFragmentShaderStringForYuvVideoRanageConversion = SHADER_STRING
 (
  varying highp vec2 textureCoordinate;
  
@@ -76,9 +76,9 @@ GLfloat kColorConversion709Default[] = {
 };
 
 
-static GLfloat *kColorConversion601 = kColorConversion601Default;
-static GLfloat *kColorConversion601FullRange = kColorConversion601FullRangeDefault;
-static GLfloat *kColorConversion709 = kColorConversion709Default;
+GLfloat *kColorConversion601 = kColorConversion601Default;
+GLfloat *kColorConversion601FullRange = kColorConversion601FullRangeDefault;
+GLfloat *kColorConversion709 = kColorConversion709Default;
 
 @implementation ColorConversion
 

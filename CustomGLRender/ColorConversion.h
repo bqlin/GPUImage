@@ -9,12 +9,12 @@
 #import <Foundation/Foundation.h>
 #import <GLKit/GLKit.h>
 
-static NSString * const kFragmentShaderStringForYuvFullRanageConversion;
-static NSString * const kFragmentShaderStringForYuvVideoRanageConversion;
+extern NSString * const kFragmentShaderStringForYuvFullRanageConversion;
+extern NSString * const kFragmentShaderStringForYuvVideoRanageConversion;
 
-static GLfloat *kColorConversion601;
-static GLfloat *kColorConversion601FullRange;
-static GLfloat *kColorConversion709;
+extern GLfloat *kColorConversion601;
+extern GLfloat *kColorConversion601FullRange;
+extern GLfloat *kColorConversion709;
 
 @interface ColorConversion : NSObject
 

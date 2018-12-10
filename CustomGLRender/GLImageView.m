@@ -242,7 +242,7 @@
     GLint backingWidth, backingHeight;
     glGetRenderbufferParameteriv(GL_RENDERBUFFER, GL_RENDERBUFFER_WIDTH, &backingWidth);
     glGetRenderbufferParameteriv(GL_RENDERBUFFER, GL_RENDERBUFFER_HEIGHT, &backingHeight);
-    if ( (backingWidth == 0) || (backingHeight == 0) ) {
+    if (backingWidth == 0 || backingHeight == 0) {
         [self destroyDisplayFramebuffer];
         return;
     }
