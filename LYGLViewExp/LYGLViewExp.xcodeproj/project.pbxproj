@@ -1,0 +1,382 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FB67010D21BE3A4000B1B97A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FB67010C21BE3A4000B1B97A /* AppDelegate.m */; };
+		FB67011021BE3A4000B1B97A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB67010F21BE3A4000B1B97A /* ViewController.m */; };
+		FB67011321BE3A4000B1B97A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB67011121BE3A4000B1B97A /* Main.storyboard */; };
+		FB67011521BE3A4100B1B97A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB67011421BE3A4100B1B97A /* Assets.xcassets */; };
+		FB67011821BE3A4100B1B97A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB67011621BE3A4100B1B97A /* LaunchScreen.storyboard */; };
+		FB67011B21BE3A4100B1B97A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FB67011A21BE3A4100B1B97A /* main.m */; };
+		FB67012321BE3A6200B1B97A /* LYOpenGLView.m in Sources */ = {isa = PBXBuildFile; fileRef = FB67012221BE3A6100B1B97A /* LYOpenGLView.m */; };
+		FB67012621BE3BD900B1B97A /* LYCameraViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB67012521BE3BD900B1B97A /* LYCameraViewController.m */; };
+		FB67012921BE3BF100B1B97A /* LYVideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB67012821BE3BF100B1B97A /* LYVideoViewController.m */; };
+		FB67012C21BE42C500B1B97A /* Shader.vsh in Resources */ = {isa = PBXBuildFile; fileRef = FB67012A21BE42C400B1B97A /* Shader.vsh */; };
+		FB67012D21BE42C500B1B97A /* Shader.fsh in Resources */ = {isa = PBXBuildFile; fileRef = FB67012B21BE42C400B1B97A /* Shader.fsh */; };
+		FB67013321BE43E300B1B97A /* local.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = FB67013221BE43E200B1B97A /* local.mp4 */; };
+		FB67013621BE440800B1B97A /* AssetFrameReader.m in Sources */ = {isa = PBXBuildFile; fileRef = FB67013421BE440800B1B97A /* AssetFrameReader.m */; };
+		FB67013921BE45C900B1B97A /* UINavigationController+Rotate.m in Sources */ = {isa = PBXBuildFile; fileRef = FB67013821BE45C900B1B97A /* UINavigationController+Rotate.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		FB67010821BE3A4000B1B97A /* LYGLViewExp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LYGLViewExp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FB67010B21BE3A4000B1B97A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		FB67010C21BE3A4000B1B97A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		FB67010E21BE3A4000B1B97A /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		FB67010F21BE3A4000B1B97A /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		FB67011221BE3A4000B1B97A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FB67011421BE3A4100B1B97A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FB67011721BE3A4100B1B97A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FB67011921BE3A4100B1B97A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FB67011A21BE3A4100B1B97A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		FB67012121BE3A6100B1B97A /* LYOpenGLView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYOpenGLView.h; sourceTree = "<group>"; };
+		FB67012221BE3A6100B1B97A /* LYOpenGLView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LYOpenGLView.m; sourceTree = "<group>"; };
+		FB67012421BE3BD900B1B97A /* LYCameraViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LYCameraViewController.h; sourceTree = "<group>"; };
+		FB67012521BE3BD900B1B97A /* LYCameraViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LYCameraViewController.m; sourceTree = "<group>"; };
+		FB67012721BE3BF100B1B97A /* LYVideoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LYVideoViewController.h; sourceTree = "<group>"; };
+		FB67012821BE3BF100B1B97A /* LYVideoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LYVideoViewController.m; sourceTree = "<group>"; };
+		FB67012A21BE42C400B1B97A /* Shader.vsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = Shader.vsh; sourceTree = "<group>"; };
+		FB67012B21BE42C400B1B97A /* Shader.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = Shader.fsh; sourceTree = "<group>"; };
+		FB67013221BE43E200B1B97A /* local.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = local.mp4; path = ../../../../../../Movies/local.mp4; sourceTree = "<group>"; };
+		FB67013421BE440800B1B97A /* AssetFrameReader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AssetFrameReader.m; path = ../../CustomGLRender/AssetFrameReader.m; sourceTree = "<group>"; };
+		FB67013521BE440800B1B97A /* AssetFrameReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AssetFrameReader.h; path = ../../CustomGLRender/AssetFrameReader.h; sourceTree = "<group>"; };
+		FB67013721BE45C900B1B97A /* UINavigationController+Rotate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+Rotate.h"; sourceTree = "<group>"; };
+		FB67013821BE45C900B1B97A /* UINavigationController+Rotate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+Rotate.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FB67010521BE3A4000B1B97A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FB6700FF21BE3A4000B1B97A = {
+			isa = PBXGroup;
+			children = (
+				FB67010A21BE3A4000B1B97A /* LYGLViewExp */,
+				FB67010921BE3A4000B1B97A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FB67010921BE3A4000B1B97A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FB67010821BE3A4000B1B97A /* LYGLViewExp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FB67010A21BE3A4000B1B97A /* LYGLViewExp */ = {
+			isa = PBXGroup;
+			children = (
+				FB67013221BE43E200B1B97A /* local.mp4 */,
+				FB67012121BE3A6100B1B97A /* LYOpenGLView.h */,
+				FB67012221BE3A6100B1B97A /* LYOpenGLView.m */,
+				FB67012B21BE42C400B1B97A /* Shader.fsh */,
+				FB67012A21BE42C400B1B97A /* Shader.vsh */,
+				FB67013521BE440800B1B97A /* AssetFrameReader.h */,
+				FB67013421BE440800B1B97A /* AssetFrameReader.m */,
+				FB67010B21BE3A4000B1B97A /* AppDelegate.h */,
+				FB67010C21BE3A4000B1B97A /* AppDelegate.m */,
+				FB67010E21BE3A4000B1B97A /* ViewController.h */,
+				FB67010F21BE3A4000B1B97A /* ViewController.m */,
+				FB67012421BE3BD900B1B97A /* LYCameraViewController.h */,
+				FB67012521BE3BD900B1B97A /* LYCameraViewController.m */,
+				FB67012721BE3BF100B1B97A /* LYVideoViewController.h */,
+				FB67012821BE3BF100B1B97A /* LYVideoViewController.m */,
+				FB67013721BE45C900B1B97A /* UINavigationController+Rotate.h */,
+				FB67013821BE45C900B1B97A /* UINavigationController+Rotate.m */,
+				FB67011121BE3A4000B1B97A /* Main.storyboard */,
+				FB67011421BE3A4100B1B97A /* Assets.xcassets */,
+				FB67011621BE3A4100B1B97A /* LaunchScreen.storyboard */,
+				FB67011921BE3A4100B1B97A /* Info.plist */,
+				FB67011A21BE3A4100B1B97A /* main.m */,
+			);
+			path = LYGLViewExp;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FB67010721BE3A4000B1B97A /* LYGLViewExp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FB67011E21BE3A4100B1B97A /* Build configuration list for PBXNativeTarget "LYGLViewExp" */;
+			buildPhases = (
+				FB67010421BE3A4000B1B97A /* Sources */,
+				FB67010521BE3A4000B1B97A /* Frameworks */,
+				FB67010621BE3A4000B1B97A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LYGLViewExp;
+			productName = LYGLViewExp;
+			productReference = FB67010821BE3A4000B1B97A /* LYGLViewExp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FB67010021BE3A4000B1B97A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = Bq;
+				TargetAttributes = {
+					FB67010721BE3A4000B1B97A = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+				};
+			};
+			buildConfigurationList = FB67010321BE3A4000B1B97A /* Build configuration list for PBXProject "LYGLViewExp" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FB6700FF21BE3A4000B1B97A;
+			productRefGroup = FB67010921BE3A4000B1B97A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FB67010721BE3A4000B1B97A /* LYGLViewExp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FB67010621BE3A4000B1B97A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FB67012C21BE42C500B1B97A /* Shader.vsh in Resources */,
+				FB67013321BE43E300B1B97A /* local.mp4 in Resources */,
+				FB67011821BE3A4100B1B97A /* LaunchScreen.storyboard in Resources */,
+				FB67011521BE3A4100B1B97A /* Assets.xcassets in Resources */,
+				FB67011321BE3A4000B1B97A /* Main.storyboard in Resources */,
+				FB67012D21BE42C500B1B97A /* Shader.fsh in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FB67010421BE3A4000B1B97A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FB67011021BE3A4000B1B97A /* ViewController.m in Sources */,
+				FB67011B21BE3A4100B1B97A /* main.m in Sources */,
+				FB67012321BE3A6200B1B97A /* LYOpenGLView.m in Sources */,
+				FB67010D21BE3A4000B1B97A /* AppDelegate.m in Sources */,
+				FB67013621BE440800B1B97A /* AssetFrameReader.m in Sources */,
+				FB67012621BE3BD900B1B97A /* LYCameraViewController.m in Sources */,
+				FB67013921BE45C900B1B97A /* UINavigationController+Rotate.m in Sources */,
+				FB67012921BE3BF100B1B97A /* LYVideoViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		FB67011121BE3A4000B1B97A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FB67011221BE3A4000B1B97A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FB67011621BE3A4100B1B97A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FB67011721BE3A4100B1B97A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FB67011C21BE3A4100B1B97A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		FB67011D21BE3A4100B1B97A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FB67011F21BE3A4100B1B97A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = V7WL667MJM;
+				INFOPLIST_FILE = LYGLViewExp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = bq.LYGLViewExp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FB67012021BE3A4100B1B97A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = V7WL667MJM;
+				INFOPLIST_FILE = LYGLViewExp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = bq.LYGLViewExp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FB67010321BE3A4000B1B97A /* Build configuration list for PBXProject "LYGLViewExp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FB67011C21BE3A4100B1B97A /* Debug */,
+				FB67011D21BE3A4100B1B97A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FB67011E21BE3A4100B1B97A /* Build configuration list for PBXNativeTarget "LYGLViewExp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FB67011F21BE3A4100B1B97A /* Debug */,
+				FB67012021BE3A4100B1B97A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FB67010021BE3A4000B1B97A /* Project object */;
+}
