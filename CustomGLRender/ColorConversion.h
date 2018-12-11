@@ -12,9 +12,9 @@
 extern NSString * const kFragmentShaderStringForYuvFullRanageConversion;
 extern NSString * const kFragmentShaderStringForYuvVideoRanageConversion;
 
-extern GLfloat *kColorConversion601;
-extern GLfloat *kColorConversion601FullRange;
-extern GLfloat *kColorConversion709;
+extern GLfloat *kColorConver601;
+extern GLfloat *kColorConver601FullRange;
+extern GLfloat *kColorConver709;
 
 @interface ColorConversion : NSObject
 

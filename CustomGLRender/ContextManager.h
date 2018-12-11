@@ -25,6 +25,7 @@
 
 - (void)presentBufferForDisplay;
 
-+ (void)runSynchronouslyOnVideoProcessingQueueWithAction:(void (^)(void))action;
++ (void)syncActionOnVideoProcessingQueue:(void (^)(void))action;
++ (void)syncActionOnMainQueue:(void (^)(void))action;
 
 @end

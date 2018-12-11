@@ -55,30 +55,30 @@ NSString * const kFragmentShaderStringForYuvVideoRanageConversion = SHADER_STRIN
  );
 
 // BT.601, which is the standard for SDTV.
-GLfloat kColorConversion601Default[] = {
+GLfloat kColorConver601Default[] = {
     1.164,  1.164, 1.164,
     0.0, -0.392, 2.017,
     1.596, -0.813,   0.0,
 };
 
 // BT.601 full range (ref: http://www.equasys.de/colorconversion.html)
-GLfloat kColorConversion601FullRangeDefault[] = {
+GLfloat kColorConver601FullRangeDefault[] = {
     1.0,    1.0,    1.0,
     0.0,    -0.343, 1.765,
     1.4,    -0.711, 0.0,
 };
 
 // BT.709, which is the standard for HDTV.
-GLfloat kColorConversion709Default[] = {
+GLfloat kColorConver709Default[] = {
     1.164,  1.164, 1.164,
     0.0, -0.213, 2.112,
     1.793, -0.533,   0.0,
 };
 
 
-GLfloat *kColorConversion601 = kColorConversion601Default;
-GLfloat *kColorConversion601FullRange = kColorConversion601FullRangeDefault;
-GLfloat *kColorConversion709 = kColorConversion709Default;
+GLfloat *kColorConver601 = kColorConver601Default;
+GLfloat *kColorConver601FullRange = kColorConver601FullRangeDefault;
+GLfloat *kColorConver709 = kColorConver709Default;
 
 @implementation ColorConversion
 

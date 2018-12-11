@@ -101,7 +101,28 @@
 #pragma mark -
 
 - (void)recalculateViewGeometry {
+    __block CGSize boundsSize;
+    __block CGRect insetRect;
+    [ContextManager syncActionOnMainQueue:^{
+        boundsSize = self.bounds.size;
+        insetRect = AVMakeRectWithAspectRatioInsideRect(self.inputImageSize, self.bounds);
+    }];
     CGFloat heightScaling = 1.0, widthScaling = 1.0;
+    switch (_videoGravity) {
+        case VideoGravityResize:{
+            widthScaling = 1.0;
+            heightScaling = 1.0;
+        } break;
+        case VideoGravityResizeAspect:{
+            widthScaling = CGRectGetWidth(insetRect) / boundsSize.width;
+            heightScaling = CGRectGetHeight(insetRect) / boundsSize.height;
+        } break;
+        case VideoGravityResizeAspectFill:{
+            widthScaling = boundsSize.height / CGRectGetHeight(insetRect);
+            heightScaling = boundsSize.width / CGRectGetWidth(insetRect);
+        } break;
+    }
+    
     _imageVertices[0] = -widthScaling;
     _imageVertices[1] = -heightScaling;
     _imageVertices[2] = widthScaling;

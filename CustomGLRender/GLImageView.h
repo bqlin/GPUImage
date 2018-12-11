@@ -22,6 +22,12 @@ typedef NS_ENUM(NSInteger, ImageRotation) {
     ImageRotation180,
 };
 
+typedef NS_ENUM(NSInteger, VideoGravity) {
+    VideoGravityResizeAspect,
+    VideoGravityResizeAspectFill,
+    VideoGravityResize,
+};
+
 @interface GLImageView : UIView
 
 @property (nonatomic, assign, readonly) CGSize sizeInPixels;
@@ -30,6 +36,8 @@ typedef NS_ENUM(NSInteger, ImageRotation) {
 @property (nonatomic, assign) CGSize inputImageSize;
 
 @property (nonatomic, assign) ImageRotation inputRotation;
+
+@property (nonatomic, assign) VideoGravity videoGravity;
 
 /// 输入帧缓存
 @property (nonatomic, strong) Framebuffer *inputFramebufferForDisplay;

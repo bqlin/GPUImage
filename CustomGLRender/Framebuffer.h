@@ -49,8 +49,8 @@ NS_INLINE TextureOptions DefaultTextureOptions() {
 
 @property (nonatomic, assign, readonly) BOOL missingFramebuffer;
 
+//- (instancetype)initWithSize:(CGSize)framebufferSize overriddenTexture:(GLuint)inputTexture;
 - (instancetype)initWithSize:(CGSize)framebufferSize;
-- (instancetype)initWithSize:(CGSize)framebufferSize overriddenTexture:(GLuint)inputTexture;
 - (instancetype)initWithSize:(CGSize)framebufferSize textureOptions:(TextureOptions)textureOptions onlyTexture:(BOOL)onlyGenerateTexture;
 
 - (void)activateFramebuffer;

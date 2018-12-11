@@ -76,14 +76,14 @@
 #pragma mark -
 
 - (void)yuvConver {
-    [ContextManager runSynchronouslyOnVideoProcessingQueueWithAction:^{
+    [ContextManager syncActionOnVideoProcessingQueue:^{
         [self _yuvConver];
     }];
 }
 - (void)_yuvConver {
     [[ContextManager sharedInstance] context];
     
-    _preferredConversion = kColorConversion709;
+    _preferredConversion = kColorConver709;
     
     _yuvConverProgram = [[ContextManager sharedInstance] programForVertexShaderString:kStandardVertexShaderString fragmentShaderString:kFragmentShaderStringForYuvFullRanageConversion];
     
@@ -116,16 +116,16 @@
     CFTypeRef colorAttachments = CVBufferGetAttachment(movieFrame, kCVImageBufferYCbCrMatrixKey, NULL);
     if (colorAttachments != NULL) {
         if(CFStringCompare(colorAttachments, kCVImageBufferYCbCrMatrix_ITU_R_601_4, 0) == kCFCompareEqualTo) {
-            preferredConversion = kColorConversion601FullRange;
+            preferredConversion = kColorConver601FullRange;
         } else {
-            preferredConversion = kColorConversion709;
+            preferredConversion = kColorConver709;
         }
     } else {
-        preferredConversion = kColorConversion601FullRange;
+        preferredConversion = kColorConver601FullRange;
     }
     _preferredConversion = preferredConversion;
     
-    CFAbsoluteTime startTime = CFAbsoluteTimeGetCurrent();
+    //CFAbsoluteTime startTime = CFAbsoluteTimeGetCurrent();
     
     [[ContextManager sharedInstance] context];
     
@@ -148,7 +148,7 @@
     /// 处理亮度纹理
     // 创建亮度纹理
     glActiveTexture(GL_TEXTURE4);
-    err = CVOpenGLESTextureCacheCreateTextureFromImage(kCFAllocatorDefault, [ContextManager sharedInstance].coreVideoTextureCache, movieFrame, NULL, GL_TEXTURE_2D, GL_LUMINANCE, bufferWidth, bufferHeight, GL_LUMINANCE, GL_UNSIGNED_BYTE, 0, &luminanceTextureRef);
+    err = CVOpenGLESTextureCacheCreateTextureFromImage(kCFAllocatorDefault, [ContextManager sharedInstance].coreVideoTextureCache, movieFrame, NULL, GL_TEXTURE_2D, GL_LUMINANCE, (GLsizei)bufferWidth, (GLsizei)bufferHeight, GL_LUMINANCE, GL_UNSIGNED_BYTE, 0, &luminanceTextureRef);
     if (err) {
         NSLog(@"Error at CVOpenGLESTextureCacheCreateTextureFromImage %d", err);
         err = 0;
@@ -173,11 +173,10 @@
     glTexParameterf(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_CLAMP_TO_EDGE);
     glTexParameterf(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_CLAMP_TO_EDGE);
     
+    // 转换成 RGB 并绘制
     [self convertYUVToRGB];
     
-    //        _glRenderView.inputImageSize = CGSizeMake(_imageBufferWidth, _imageBufferHeight);
-    //        _glRenderView.inputFramebufferForDisplay = _outputFramebuffer;
-    //        [_glRenderView newFrameReadyAtTime:kCMTimeIndefinite atIndex:0];
+    /// 回调信息以继续处理
     if ([self.delegate respondsToSelector:@selector(reader:inputSize:inputFrameBuffer:)]) {
         [self.delegate reader:self inputSize:CGSizeMake(_imageBufferWidth, _imageBufferHeight) inputFrameBuffer:_outputFramebuffer];
     }
@@ -185,6 +184,7 @@
         [self.delegate reader:self newFrameReadyAtTime:currentSampleTime];
     }
     
+    // 销毁
     CVPixelBufferUnlockBaseAddress(movieFrame, 0);
     CFRelease(luminanceTextureRef);
     CFRelease(chrominanceTextureRef);
@@ -236,7 +236,7 @@
     self.processingFrameTime = currentSampleTime;
     CVPixelBufferRef movieFrame = CMSampleBufferGetImageBuffer(videoSampleBuffer);
     
-    [ContextManager runSynchronouslyOnVideoProcessingQueueWithAction:^{
+    [ContextManager syncActionOnVideoProcessingQueue:^{
         [self processMovieFrame:movieFrame withSampleTime:currentSampleTime];
     }];
 }

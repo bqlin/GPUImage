@@ -23,18 +23,18 @@
     [self destroyFramebuffer];
 }
 
+//- (instancetype)initWithSize:(CGSize)framebufferSize overriddenTexture:(GLuint)inputTexture {
+//    if (self = [super init]) {
+//        _textureOptions = DefaultTextureOptions();
+//        _framebufferSize = framebufferSize;
+//        
+//        _texture = inputTexture;
+//    }
+//    return self;
+//}
+
 - (instancetype)initWithSize:(CGSize)framebufferSize {
     return [self initWithSize:framebufferSize textureOptions:DefaultTextureOptions() onlyTexture:NO];
-}
-
-- (instancetype)initWithSize:(CGSize)framebufferSize overriddenTexture:(GLuint)inputTexture {
-    if (self = [super init]) {
-        _textureOptions = DefaultTextureOptions();
-        _framebufferSize = framebufferSize;
-        
-        _texture = inputTexture;
-    }
-    return self;
 }
 
 - (instancetype)initWithSize:(CGSize)framebufferSize textureOptions:(TextureOptions)textureOptions onlyTexture:(BOOL)onlyGenerateTexture {
@@ -44,13 +44,13 @@
         _missingFramebuffer = onlyGenerateTexture;
         
         if (_missingFramebuffer) {
-            [ContextManager runSynchronouslyOnVideoProcessingQueueWithAction:^{
+            [ContextManager syncActionOnVideoProcessingQueue:^{
                 [[ContextManager sharedInstance] context];
                 [self generateTexture];
                 self->_framebuffer = 0;
             }];
         } else {
-            [ContextManager runSynchronouslyOnVideoProcessingQueueWithAction:^{
+            [ContextManager syncActionOnVideoProcessingQueue:^{
                 [self generateFramebuffer];
             }];
         }
@@ -58,6 +58,7 @@
     return self;
 }
 
+/// 创建普通纹理
 - (void)generateTexture {
     // glActiveTextue 并不是激活纹理单元，而是选择当前活跃的纹理单元。每一个纹理单元都有GL_TEXTURE_1D, 2D, 3D 和 CUBE_MAP。
     glActiveTexture(GL_TEXTURE1);
@@ -75,6 +76,7 @@
     // TODO: Handle mipmaps
 }
 
+/// 创建 CoreVideo 帧缓存
 - (void)generateFramebuffer {
     [[ContextManager sharedInstance] context];
     
@@ -110,6 +112,7 @@
                                                        &_renderTexture);
     NSAssert(!err, @"Error at CVOpenGLESTextureCacheCreateTextureFromImage %d", err);
     
+    // 销毁字典
     CFRelease(attrs);
     CFRelease(empty);
     
@@ -123,7 +126,6 @@
     // 复制颜色数据到纹理缓存中
     glFramebufferTexture2D(GL_FRAMEBUFFER, GL_COLOR_ATTACHMENT0, GL_TEXTURE_2D, CVOpenGLESTextureGetName(_renderTexture), 0);
     
-    
 #ifndef NS_BLOCK_ASSERTIONS
     GLenum status = glCheckFramebufferStatus(GL_FRAMEBUFFER);
     NSAssert(status == GL_FRAMEBUFFER_COMPLETE, @"Incomplete filter FBO: %d", status);
@@ -133,7 +135,7 @@
 }
 
 - (void)destroyFramebuffer {
-    [ContextManager runSynchronouslyOnVideoProcessingQueueWithAction:^{
+    [ContextManager syncActionOnVideoProcessingQueue:^{
         [self _destroyFramebuffer];
     }];
 }

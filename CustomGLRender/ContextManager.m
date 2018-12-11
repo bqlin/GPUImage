@@ -8,6 +8,9 @@
 
 #import "ContextManager.h"
 
+static void *kProcessQueueContext = &kProcessQueueContext;
+static void *kMainQueueContext = &kMainQueueContext;
+
 @interface ContextManager ()
 
 @property (nonatomic, strong) EAGLContext *context;
@@ -48,6 +51,8 @@ static id _sharedInstance = nil;
 - (void)commonInit {
     dispatch_queue_attr_t queueAtrribute = dispatch_queue_attr_make_with_qos_class(DISPATCH_QUEUE_SERIAL, QOS_CLASS_DEFAULT, 0);
     _contextQueue = dispatch_queue_create("queue.GLRender", queueAtrribute);
+    dispatch_queue_set_specific(_contextQueue, kProcessQueueContext, kProcessQueueContext, NULL);
+    dispatch_queue_set_specific(dispatch_get_main_queue(), kMainQueueContext, kMainQueueContext, NULL);
 }
 
 #pragma mark - property
@@ -92,16 +97,27 @@ static id _sharedInstance = nil;
     [self.context presentRenderbuffer:GL_RENDERBUFFER];
 }
 
-+ (void)runSynchronouslyOnVideoProcessingQueueWithAction:(void (^)(void))action {
+/// 在视频处理队列上同步执行
++ (void)syncActionOnVideoProcessingQueue:(void (^)(void))action {
     ContextManager *contextManager = [ContextManager sharedInstance];
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Wdeprecated-declarations"
-    if (dispatch_get_current_queue() == contextManager.contextQueue)
-#pragma clang diagnostic pop
+    if (dispatch_get_specific(kProcessQueueContext) == kProcessQueueContext)
+//#pragma clang diagnostic push
+//#pragma clang diagnostic ignored "-Wdeprecated-declarations"
+//    if (dispatch_get_current_queue() == contextManager.contextQueue)
+//#pragma clang diagnostic pop
     {
         action();
     } else {
         dispatch_sync(contextManager.contextQueue, action);
+    }
+}
+
+/// 在主队列上同步执行
++ (void)syncActionOnMainQueue:(void (^)(void))action {
+    if (dispatch_get_specific(kMainQueueContext) == kMainQueueContext) {
+        action();
+    } else {
+        dispatch_sync(dispatch_get_main_queue(), action);
     }
 }
 
